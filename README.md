@@ -1,6 +1,6 @@
 Clone the project
 
-npm intsall //install dependencies
+npm install //install dependencies
 
 npm run dev //run the project
 
