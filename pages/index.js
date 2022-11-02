@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import {Header} from "../components/header";
+import {Footer} from "../components/Footer";
 
 export default function Home() {
   return (
@@ -15,8 +16,10 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
             <div className='animate-pulse '>Work in Progress...</div>
+
         </h1>
       </main>
+        <Footer/>
     </div>
   )
 }
