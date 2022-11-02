@@ -1,1 +1,1 @@
-Deployed: https://businessprofile.vercel.app/
+Deployed: https://ishwarpatil.com
