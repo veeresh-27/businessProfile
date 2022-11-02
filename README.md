@@ -1,2 +1,1 @@
-Deployed: [https://businessprofile.vercel.app/
-](https://ishwarpatil.com/)
+Deployed: https://ishwarpatil.com
