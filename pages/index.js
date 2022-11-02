@@ -12,12 +12,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-         Work in Progress...
+            <div className='animate-pulse '>Work in Progress...</div>
+
         </h1>
-
-
-
-
       </main>
     </div>
   )
