@@ -6,29 +6,32 @@ export const Link = () => {
     const navLinkTitle = [
         {
             name: "About",
-            link: "/about",
+            title:'About Ishwar Patil'
         },
         {
-            name: "Contact",
-            link: "/Contact",
+            name: "Insurance",
+            title: 'Why should you have an Insurance'
         },
         {
-            name: "Signup",
-            link: "/signup",
+            name: "Mutual Funds",
+            title:'Benifits of mutual funds'
         },
+        {
+            name: "Contact-Us",
+            style: 'border-2 border-green-600 cursor-pointer p-1 hover:bg-green-600 hover:text-white transition-all ease-in-out duration-500',
+        },
+
     ];
 
     return (
 
-        // <div className="relative flex items-center justify-between gap-2 text-xl text-black font-medium ">
-<div className=" text-xl px-3 py-2  md:flex md:items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 justify-between gap-2 font-medium cursor-pointer ">
-            {navLinkTitle.map(({ name, link, method }, index) => (
-                <div key={index}  >
+        <div className="relative flex items-center justify-between gap-2 text-l text-gray-700 font-medium">
+
+            {navLinkTitle.map(({ name,title,style }, index) => (
+                <div title={title?`${title}`:null} key={index}  className={style?`${style}`:`cursor-pointer`}>
                     {name}
                 </div>
             ))}
-
-
         </div>
     );
 };

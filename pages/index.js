@@ -5,7 +5,7 @@ import {Header} from "../components/header";
 
 export default function Home() {
   return (
-    <div>
+    <div className='flex flex-col'>
         <Header/>
       <Head>
         <title>Financial Advisor</title>
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <div className="flex flex-col justify-center w-full h-full gap-4 pt-20">
+        <div className="flex flex-col justify-center w-full h-full gap-4 pt-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12">
           <h1 className="flex self-center pt-20 text-xl font-bold text-center sm:text-xl md:text-2xl lg:text-4xl">
               Experience Your Financial Journey Hassle-Free
           </h1>
