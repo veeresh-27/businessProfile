@@ -2,10 +2,11 @@ import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 import {Header} from "../components/header";
 // import {Footer} from "../components/Footer";
+// import {Footer} from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col overflow-x-hidden'>
         <Header/>
       <Head>
         <title>Financial Advisor</title>
@@ -22,6 +23,9 @@ export default function Home() {
                 <br/>
                 Made Simple With Smart Technology
             </div>
+
+        </div>
+        <div>
 
         </div>
         {/*<Footer/>*/}
