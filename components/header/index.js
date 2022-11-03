@@ -13,8 +13,7 @@ export function Header(){
 </div>
     <div className="hidden md:flex md:items-center transition-all ease-in duration-500  gap-2 "><Link/></div>
         <div className='md:hidden p-3 cursor-pointer' onClick={()=>setMobNav(!mobNav)}><IconBurger/></div>
-        <div className={`flex flex-col absolute w-1/3 bg-gray-900 top-12 right-0 p-3  ${mobNav ? 'translate-x-0': 'translate-x-full'} translate-all ease-in-out duration-200`}><Link isOnMobile setMobNav/></div>
-
+        <div className={`flex flex-col absolute w-1/3 bg-gray-900 top-12 right-0 p-3  ${mobNav ? 'transfrom translate-x-0': 'transfrom translate-x-full opacity-0'} translate-all ease-in-out duration-200`}><Link isOnMobile setMobNav/></div>
 </div>
     );
 }
