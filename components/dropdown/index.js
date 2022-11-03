@@ -5,9 +5,9 @@ import { Fragment } from "react";
 export function Dropdown({ title, options }) {
     return (
         <div className="text-right ">
-            <Menu as="div" className="relative inline-block text-left ">
+            <Menu as="div" className="relative inline-block text-left hover:text-white ">
                 <div className="flex items-center justify-center">
-                    <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-black text-md rounded-xl hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-opacity-75">
+                    <Menu.Button className="inline-flex justify-center w-full px-20 py-8 text-black text-md rounded-xl hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-opacity-75 ">
                         {title}
                         {/*<ChevronDownIcon*/}
                         {/*    className={*/}
@@ -30,7 +30,7 @@ export function Dropdown({ title, options }) {
                     leaveFrom="transform opacity-100 scale-100"
                     leaveTo="transform opacity-0 scale-95"
                 >
-                    <Menu.Items className="absolute right-0 mt-2 w-48 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ">
+                    <Menu.Items className="absolute right-0 mt-2 w-48 origin-top-right divide-y divide-white-100 rounded-[12px] bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ">
                         <div className="px-1 py-1  ">
                             {options?.map(({ name, method }, index) => (
                                 <Menu.Item key={index}>
@@ -38,8 +38,8 @@ export function Dropdown({ title, options }) {
                                         <button
                                             className={`${
                                                 active
-                                                    ? "bg-primary  text-white  rounded-xl"
-                                                    : " text-gray-900 "
+                                                    ? "bg-primary text-white  rounded-xl"
+                                                    : " text-gray-900  "
                                             } group flex w-full items-center px-2 py-2 text-sm`}
                                             onClick={method ? method : ""}
                                         >
