@@ -13,7 +13,7 @@ export const Link = ({isOnMobile=false,setMobNav=null}) => {
             title: 'Why should you have an Insurance'
         },
         {
-            name: "MutualFunds",
+            name:<>Mutual&nbsp;Funds</> ,
             title:'Benefits of mutual funds'
         },
         {

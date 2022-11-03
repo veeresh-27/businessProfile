@@ -1,9 +1,12 @@
 import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 import {Header} from "../components/header";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {Footer} from "../components/Footer";
 import Image from "next/image";
+import mutual from "../public/img/mutual_fund.png";
+import  life from "../public/img/life-insurance.png";
+import cal from "../public/img/premium_calculator.png";
+import {IconArrow} from "../public/icons/iconArrow";
 // import {Footer} from "../components/Footer";
 
 export default function Home() {
@@ -38,7 +41,7 @@ export default function Home() {
             <div className="flex justify-center space-x-10  my-6 ">
                 <div className="rounded-lg shadow-lg bg-white max-w-xs">
                     <a href="#">
-                        <Image className="rounded-md" src="https://www.bing.com/images/blob?bcid=r84EllntatgE1g"
+                        <Image className="rounded-md" src={mutual}
                              alt=""/>
                     </a>
                     <div className="p-4">
@@ -47,7 +50,7 @@ export default function Home() {
                             Get future-ready by investing in mutual funds, a professionally managed investing program & fulfill your long term
                         </p>
                         <button type="button"
-                                className="inline-block px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Read More
+                                className="flex px-6 py-2 border-2 border-green-400 text-green-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Read More <IconArrow />
                         </button>
                     </div>
 
@@ -57,7 +60,7 @@ export default function Home() {
                 <div className="flex justify-center ">
                     <div className="rounded-lg shadow-lg bg-white max-w-xs">
                         <a href="#">
-                            <Image className="rounded-md" src="https://www.bharatparekh.com/content/images/homepage/home_img/life-insurance.png"
+                            <Image className="rounded-md" src= {life}
                                  alt=""/>
                         </a>
                         <div className="p-4">
@@ -65,7 +68,7 @@ export default function Home() {
                             <p className="text-gray-700 text-base mb-4">
                                 Life a journey filled with uncertainties,so why not plan to counter those with confidence? </p>
                             <button type="button"
-                                    className="inline-block my-5 px-6  py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Read More
+                                    className="flex my-9 px-6  py-2 border-2 border-green-400 text-green-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Read More <IconArrow />
                             </button>
 
                         </div>
@@ -75,7 +78,7 @@ export default function Home() {
                 <div className="flex justify-center ">
                     <div className="rounded-lg shadow-lg bg-white max-w-xs">
                         <a href="#">
-                            <Image className="rounded-md" src="https://www.bharatparekh.com/content/images/homepage/home_img/premium_calculator.png"
+                            <Image className="rounded-md" src={cal}
                                  alt=""/>
                         </a>
                         <div className="p-4">
@@ -84,7 +87,7 @@ export default function Home() {
                                 Get adequate property, accident coverage & travel insurance with plans that meets your requirements the best.
                             </p>
                             <button type="button"
-                                    className="inline-block my-4 px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Read More
+                                    className="flex my-8 px-6 py-2 border-2 border-green-400 text-green-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Read More <IconArrow />
                             </button>
                         </div>
                     </div>
