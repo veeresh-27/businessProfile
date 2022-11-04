@@ -2,7 +2,67 @@
 
 // import life from "../public/img/life-insurance.png";
 // import Image from "next/image";
+
+import { InsuranceCard } from "../../components/insuranceCard";
+
 export default function Insurance() {
+  const insurancePlans = [
+    {
+      id: 1,
+      title: "Term Life Insurance",
+      lines: [
+        "The most affordable form of life insurance, premiums of plan\n" +
+          "                under this category are cheap compared to other life insurance\n" +
+          "                products.",
+        "In the event of an unfortunate demise during the policy term,\n" +
+          "                Nominees will receive the ‘Sum Assured’.",
+      ],
+    },
+    {
+      id: 2,
+      title: "Whole Life Policy",
+      lines: [
+        "The most affordable form of life insurance, premiums of plan\n" +
+          "                under this category are cheap compared to other life insurance\n" +
+          "                products.",
+        "In the event of an unfortunate demise during the policy term,\n" +
+          "                Nominees will receive the ‘Sum Assured’.",
+      ],
+    },
+    {
+      id: 3,
+      title: "Endowment Plan",
+      lines: [
+        "The main difference that Endowment Plans offer from term plans\n" +
+          "                is the Maturity Benefit.",
+        "This type of plan pays out sum assured along with profits under\n" +
+          "                both scenarios - death & survival. The profits that are availed\n" +
+          "                in such plans are the result of investment in equities & debt.",
+      ],
+    },
+    {
+      id: 4,
+      title: "Unit Linked Insurance Plans (ULIPs)",
+      lines: [
+        "As the name suggests, this plan is linked to the markets.",
+        "This type of plan are a variant of traditional endowment plan\n" +
+          "                and pay out a certain sum assured on death or maturity,\n" +
+          "                whichever is earlier.",
+      ],
+    },
+    {
+      id: 5,
+      title: "Money Back Policy",
+      lines: [
+        "This type of policy gives out periodic payments over the policy\n" +
+          "                term.",
+        "Incase of the death of the policy holder, the beneficiaries get\n" +
+          "                the full sum assured and if the holder survives the policy term,\n" +
+          "                he/she gets the balance amount (sum assured).",
+      ],
+    },
+  ];
+
   return (
     <>
       {" "}
@@ -75,67 +135,74 @@ export default function Insurance() {
             <h1 className="text-xl font-bold text-green-600 ">
               Types Of Insurance
             </h1>
+            {insurancePlans.map((plan) => (
+              <InsuranceCard
+                key={plan.id}
+                title={plan.title}
+                lines={plan.lines}
+                id={plan.id}
+              />
+            ))}
+            {/*<div className=" border-2 border-green-600  bg-sky-200 rounded-xl text-md   text-center font-base text-gray-600 my-3 ">*/}
+            {/*  <h2 className="text-md  font-bold">Term Life Insurance</h2>*/}
+            {/*  <p>*/}
+            {/*    The most affordable form of life insurance, premiums of plan*/}
+            {/*    under this category are cheap compared to other life insurance*/}
+            {/*    products.*/}
+            {/*  </p>*/}
+            {/*  <p>*/}
+            {/*    In the event of an unfortunate demise during the policy term,*/}
+            {/*    Nominees will receive the ‘Sum Assured’.*/}
+            {/*  </p>*/}
+            {/*</div>*/}
 
-            <div className=" border-2 border-green-600  bg-sky-200 rounded-xl text-md   text-center font-base text-gray-600 my-3 ">
-              <h2 className="text-md  font-bold">Term Life Insurance</h2>
-              <p>
-                The most affordable form of life insurance, premiums of plan
-                under this category are cheap compared to other life insurance
-                products.
-              </p>
-              <p>
-                In the event of an unfortunate demise during the policy term,
-                Nominees will receive the ‘Sum Assured’.
-              </p>
-            </div>
-
-            <div className=" border-2 border-green-600 bg-emerald-200 rounded-xl text-md   text-center font-base text-gray-600 my-3 ">
-              <h2 className="text-md  font-bold">Whole Life Policy</h2>
-              <p>
-                The most affordable form of life insurance, premiums of plan
-                under this category are cheap compared to other life insurance
-                products.
-              </p>
-              <p>
-                In the event of an unfortunate demise during the policy term,
-                Nominees will receive the ‘Sum Assured’.
-              </p>
-            </div>
-            <div className=" border-2 border-green-600 bg-amber-200 rounded-xl  text-md   text-center font-base text-gray-600 my-3 ">
-              <h2 className="text-md  font-bold">Endowment Plan</h2>
-              <p>
-                One main difference that Endowment Plans offer from term plans
-                is the Maturity Benefit.
-              </p>
-              <p>
-                This type of plan pays out sum assured along with profits under
-                both scenarios - death & survival. The profits that are availed
-                in such plans are the result of investment in equities & debt.
-              </p>
-            </div>
-            <div className=" border-2 border-green-600 bg-gray-200 rounded-xl   text-md   text-center font-base text-gray-600 my-3 ">
-              <h2 className="text-md  font-bold">
-                Unit Linked Insurance Plans (ULIPs)
-              </h2>
-              <p>As the name suggests, this plan is linked to the markets.</p>
-              <p>
-                This type of plan are a variant of traditional endowment plan
-                and pay out a certain sum assured on death or maturity,
-                whichever is earlier.
-              </p>
-            </div>
-            <div className=" border-2 border-green-600  bg-sky-200 rounded-xl   text-md   text-center font-base text-gray-600 my-3 ">
-              <h2 className="text-md  font-bold">Money Back Policy</h2>
-              <p>
-                This type of policy gives out periodic payments over the policy
-                term.
-              </p>
-              <p>
-                Incase of the death of the policy holder, the beneficiaries get
-                the full sum assured and if the holder survives the policy term,
-                he/she gets the balance amount (sum assured).
-              </p>
-            </div>
+            {/*<div className=" border-2 border-green-600 bg-emerald-200 rounded-xl text-md   text-center font-base text-gray-600 my-3 ">*/}
+            {/*  <h2 className="text-md  font-bold">Whole Life Policy</h2>*/}
+            {/*  <p>*/}
+            {/*    The most affordable form of life insurance, premiums of plan*/}
+            {/*    under this category are cheap compared to other life insurance*/}
+            {/*    products.*/}
+            {/*  </p>*/}
+            {/*  <p>*/}
+            {/*    In the event of an unfortunate demise during the policy term,*/}
+            {/*    Nominees will receive the ‘Sum Assured’.*/}
+            {/*  </p>*/}
+            {/*</div>*/}
+            {/*<div className=" border-2 border-green-600 bg-amber-200 rounded-xl  text-md   text-center font-base text-gray-600 my-3 ">*/}
+            {/*  <h2 className="text-md  font-bold">Endowment Plan</h2>*/}
+            {/*  <p>*/}
+            {/*    One main difference that Endowment Plans offer from term plans*/}
+            {/*    is the Maturity Benefit.*/}
+            {/*  </p>*/}
+            {/*  <p>*/}
+            {/*    This type of plan pays out sum assured along with profits under*/}
+            {/*    both scenarios - death & survival. The profits that are availed*/}
+            {/*    in such plans are the result of investment in equities & debt.*/}
+            {/*  </p>*/}
+            {/*</div>*/}
+            {/*<div className=" border-2 border-green-600 bg-gray-200 rounded-xl   text-md   text-center font-base text-gray-600 my-3 ">*/}
+            {/*  <h2 className="text-md  font-bold">*/}
+            {/*    Unit Linked Insurance Plans (ULIPs)*/}
+            {/*  </h2>*/}
+            {/*  <p>As the name suggests, this plan is linked to the markets.</p>*/}
+            {/*  <p>*/}
+            {/*    This type of plan are a variant of traditional endowment plan*/}
+            {/*    and pay out a certain sum assured on death or maturity,*/}
+            {/*    whichever is earlier.*/}
+            {/*  </p>*/}
+            {/*</div>*/}
+            {/*<div className=" border-2 border-green-600  bg-sky-200 rounded-xl   text-md   text-center font-base text-gray-600 my-3 ">*/}
+            {/*  <h2 className="text-md  font-bold">Money Back Policy</h2>*/}
+            {/*  <p>*/}
+            {/*    This type of policy gives out periodic payments over the policy*/}
+            {/*    term.*/}
+            {/*  </p>*/}
+            {/*  <p>*/}
+            {/*    Incase of the death of the policy holder, the beneficiaries get*/}
+            {/*    the full sum assured and if the holder survives the policy term,*/}
+            {/*    he/she gets the balance amount (sum assured).*/}
+            {/*  </p>*/}
+            {/*</div>*/}
           </div>
         </div>
       </div>
