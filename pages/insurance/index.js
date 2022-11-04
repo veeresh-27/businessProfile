@@ -6,7 +6,7 @@ export default function Insurance() {
   return (
     <>
       {" "}
-      <h1 className="text-xl text-green-600 text-center font-bold">
+      <h1 className="text-2xl text-green-600 text-center font-bold">
         Life Insurance
       </h1>
       <div className="border mt-10  bg-white-200  justify-center   ">
