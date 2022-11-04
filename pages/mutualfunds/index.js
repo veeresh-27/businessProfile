@@ -1,3 +1,6 @@
+import Image from "next/image";
+import typesOfMmutualFund from "../../public/img/mf.jpg";
+
 export default function MutualFunds() {
   return (
     <>
@@ -5,7 +8,7 @@ export default function MutualFunds() {
         Know Mutual Fund
       </h1>
       <div>
-        <p className=" text-md font-bold text-gray-600 my-9  px-20">
+        <p className=" text-md font-bold text-gray-500 my-9  px-20">
           {" "}
           <span className="text-xl text-green-600 ">Mutual Funds</span> offer a
           way for a group of investors to effectively pool their money so they
@@ -37,12 +40,12 @@ export default function MutualFunds() {
           Lets glance at why should one consider investing in mutual funds over
           other options to achieve their financial goals:
         </h3>
-        <div className="flex  my-5 gap-10">
-          <div className="border  px-4  ">
+        <div className="flex  my-5 gap-10 flex-wrap">
+          <div className="border  px-4 h-64 w-96 rounded-md text-ellipsis overflow-hidden">
             <h1 className="text-lg text-green-600  my-4 font-bold">
               Professional Managers
             </h1>
-            <p className="text-md font-base text-gray-600">
+            <p className="text-md font-base text-gray-600 ">
               Mutual funds are managed by professional people who have years of
               experience handling different types of assets. They are a group of
               dedicated team that handles all financial decisions based on the
@@ -53,7 +56,7 @@ export default function MutualFunds() {
             <h1 className="text-lg text-green-600  my-4 font-bold">
               Offers Convenience
             </h1>
-            <p className="text-md font-base text-gray-600">
+            <p className="text-md font-base text-gray-600 ">
               If saving time & convenience is what you seek then mutual funds
               are an ideal choice for investment. Because of low investment
               amount options, multiple choices based on ones life & financial
@@ -117,7 +120,9 @@ export default function MutualFunds() {
         <h1 className="text-xl text-green-600  my-4 font-bold">
           Types Of Mutual Funds
         </h1>
-        {/*<Image></Image>*/}
+        <div className="flex align-center justify-center">
+          <Image src={typesOfMmutualFund} alt={"ufhwe"} />
+        </div>
 
         <div>
           <h1 className="text-md text-green-600  my-4 font-bold">

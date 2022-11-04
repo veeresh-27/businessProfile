@@ -61,6 +61,51 @@ export default function Insurance() {
           "                he/she gets the balance amount (sum assured).",
       ],
     },
+    {
+      id: 6,
+      title: "Chile Higher Education Plan",
+      lines: [
+        "This type of policy gives out periodic payments over the policy term.\n" +
+          "\n" +
+          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+      ],
+    },
+    {
+      id: 7,
+      title: "Daughter Marriage Plan",
+      lines: [
+        "This type of policy gives out periodic payments over the policy term.\n" +
+          "\n" +
+          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+      ],
+    },
+    {
+      id: 8,
+      title: "Happy Retirement Plan",
+      lines: [
+        "This type of policy gives out periodic payments over the policy term.\n" +
+          "\n" +
+          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+      ],
+    },
+    {
+      id: 9,
+      title: "Tac Benefit Plan",
+      lines: [
+        "This type of policy gives out periodic payments over the policy term.\n" +
+          "\n" +
+          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+      ],
+    },
+    {
+      id: 10,
+      title: "Lifetime Income & Protection Plam",
+      lines: [
+        "This type of policy gives out periodic payments over the policy term.\n" +
+          "\n" +
+          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+      ],
+    },
   ];
 
   return (
@@ -111,7 +156,7 @@ export default function Insurance() {
               </p>
             </div>
           </div>
-          <div>
+          <div className="mt-12">
             <h1 className="text-xl font-bold text-green-600 ">
               What Does It Offer?
             </h1>
@@ -131,78 +176,20 @@ export default function Insurance() {
               to meet their likes.
             </p>
           </div>
-          <div>
+          <div className="flex flex-col items-center mt-12">
             <h1 className="text-xl font-bold text-green-600 ">
               Types Of Insurance
             </h1>
-            {insurancePlans.map((plan) => (
-              <InsuranceCard
-                key={plan.id}
-                title={plan.title}
-                lines={plan.lines}
-                id={plan.id}
-              />
-            ))}
-            {/*<div className=" border-2 border-green-600  bg-sky-200 rounded-xl text-md   text-center font-base text-gray-600 my-3 ">*/}
-            {/*  <h2 className="text-md  font-bold">Term Life Insurance</h2>*/}
-            {/*  <p>*/}
-            {/*    The most affordable form of life insurance, premiums of plan*/}
-            {/*    under this category are cheap compared to other life insurance*/}
-            {/*    products.*/}
-            {/*  </p>*/}
-            {/*  <p>*/}
-            {/*    In the event of an unfortunate demise during the policy term,*/}
-            {/*    Nominees will receive the ‘Sum Assured’.*/}
-            {/*  </p>*/}
-            {/*</div>*/}
-
-            {/*<div className=" border-2 border-green-600 bg-emerald-200 rounded-xl text-md   text-center font-base text-gray-600 my-3 ">*/}
-            {/*  <h2 className="text-md  font-bold">Whole Life Policy</h2>*/}
-            {/*  <p>*/}
-            {/*    The most affordable form of life insurance, premiums of plan*/}
-            {/*    under this category are cheap compared to other life insurance*/}
-            {/*    products.*/}
-            {/*  </p>*/}
-            {/*  <p>*/}
-            {/*    In the event of an unfortunate demise during the policy term,*/}
-            {/*    Nominees will receive the ‘Sum Assured’.*/}
-            {/*  </p>*/}
-            {/*</div>*/}
-            {/*<div className=" border-2 border-green-600 bg-amber-200 rounded-xl  text-md   text-center font-base text-gray-600 my-3 ">*/}
-            {/*  <h2 className="text-md  font-bold">Endowment Plan</h2>*/}
-            {/*  <p>*/}
-            {/*    One main difference that Endowment Plans offer from term plans*/}
-            {/*    is the Maturity Benefit.*/}
-            {/*  </p>*/}
-            {/*  <p>*/}
-            {/*    This type of plan pays out sum assured along with profits under*/}
-            {/*    both scenarios - death & survival. The profits that are availed*/}
-            {/*    in such plans are the result of investment in equities & debt.*/}
-            {/*  </p>*/}
-            {/*</div>*/}
-            {/*<div className=" border-2 border-green-600 bg-gray-200 rounded-xl   text-md   text-center font-base text-gray-600 my-3 ">*/}
-            {/*  <h2 className="text-md  font-bold">*/}
-            {/*    Unit Linked Insurance Plans (ULIPs)*/}
-            {/*  </h2>*/}
-            {/*  <p>As the name suggests, this plan is linked to the markets.</p>*/}
-            {/*  <p>*/}
-            {/*    This type of plan are a variant of traditional endowment plan*/}
-            {/*    and pay out a certain sum assured on death or maturity,*/}
-            {/*    whichever is earlier.*/}
-            {/*  </p>*/}
-            {/*</div>*/}
-            {/*<div className=" border-2 border-green-600  bg-sky-200 rounded-xl   text-md   text-center font-base text-gray-600 my-3 ">*/}
-            {/*  <h2 className="text-md  font-bold">Money Back Policy</h2>*/}
-            {/*  <p>*/}
-            {/*    This type of policy gives out periodic payments over the policy*/}
-            {/*    term.*/}
-            {/*  </p>*/}
-            {/*  <p>*/}
-            {/*    Incase of the death of the policy holder, the beneficiaries get*/}
-            {/*    the full sum assured and if the holder survives the policy term,*/}
-            {/*    he/she gets the balance amount (sum assured).*/}
-            {/*  </p>*/}
-            {/*</div>*/}
+            <div className="flex flex-wrap gap-x-8 gap-y-4 justify-center mt-4">
+              {insurancePlans.map((plan) => (
+                <InsuranceCard
+                  key={plan.id}
+                  title={plan.title}
+                  lines={plan.lines}
+                  id={plan.id}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
