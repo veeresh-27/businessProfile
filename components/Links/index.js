@@ -1,8 +1,9 @@
 import React from "react";
 // import { NavLink } from "react-router-dom";
-import Link from "next/link";
+import { useRouter } from "next/router";
 
-export const Links = ({ isOnMobile = false, setMobNav = null }) => {
+export const Links = ({ isOnMobile = false, setMobNav }) => {
+  const router = useRouter();
   const navLinkTitle = [
     {
       name: "Home",
@@ -31,18 +32,24 @@ export const Links = ({ isOnMobile = false, setMobNav = null }) => {
     },
   ];
 
+  const handleClickOnLink = (link) => {
+    router.push(`${link}`);
+    if (isOnMobile) {
+      setMobNav(false);
+    }
+  };
+
   return (
     <div
-      className={`relative flex items-center justify-between gap-2 text-l text-gray-700 font-medium p-3 ${
-        isOnMobile ? "flex-col" : null
+      className={`relative flex items-center justify-between gap-4 text-l  font-medium p-3 ${
+        isOnMobile ? "flex-col text-gray-200" : "text-gray-600"
       }`}
     >
       {navLinkTitle.map(({ name, title, style, link }) => (
-        <Link
+        <div
           title={title ? `${title}` : null}
           key={title}
-          href={`${link}`}
-          onClick={setMobNav ? () => setMobNav(false) : null}
+          onClick={() => handleClickOnLink(link)}
           className={
             style
               ? `${style}`
@@ -53,7 +60,7 @@ export const Links = ({ isOnMobile = false, setMobNav = null }) => {
           {name !== "Contact-Us" && (
             <div className="h-1 w-0 rounded translate-all ease-in duration-200 opacity-0 bg-green-600 group-hover:opacity-100 group-hover:w-3/5 "></div>
           )}
-        </Link>
+        </div>
       ))}
     </div>
   );

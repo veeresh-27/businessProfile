@@ -1,13 +1,8 @@
 import Head from "next/head";
-// import styles from '../styles/Home.module.css'
-import { Footer } from "../components/Footer";
-//import Image from "next/image";
 import mutual from "../public/img/mutual_fund.png";
 import life from "../public/img/life-insurance.png";
 import cal from "../public/img/premium_calculator.png";
-//import { IconArrow } from "../public/icons/iconArrow";
 import { Card } from "../components/card";
-// import {Footer} from "../components/Footer";
 
 export default function Home() {
   const cards = [
@@ -16,18 +11,21 @@ export default function Home() {
       title: "Mutual Funds",
       des: "Get future-ready by investing in mutual funds, a professionally managed investing program & fulfill your long term",
       image: mutual,
+      link: "/mutualfunds",
     },
     {
       id: 2,
       title: "Life Insurance",
       des: "Life a journey filled with uncertainties,so why not plan to counter those with confidence?",
       image: life,
+      link: "/insurance",
     },
     {
       id: 3,
       title: "Health Insurance",
       des: "Get adequate property, accident coverage & travel insurance with plans that meets your requirements the best.",
       image: cal,
+      link: "/insurance",
     },
   ];
   return (
@@ -70,12 +68,11 @@ export default function Home() {
           </h4>
         </div>
         <div className="flex justify-center gap-10  my-6 flex-wrap ">
-          {cards.map(({ id, title, des, image }) => (
-            <Card key={id} title={title} des={des} image={image} />
+          {cards.map(({ id, title, des, image, link }) => (
+            <Card key={id} title={title} des={des} image={image} link={link} />
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

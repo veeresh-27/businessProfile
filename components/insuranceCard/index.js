@@ -1,9 +1,15 @@
 export const InsuranceCard = ({ title, lines, id }) => {
-  const cardColors = ["emerald-200", "amber-200", "gray-200", "sky-200"];
+  const cardColors = [
+    "bg-red-200",
+    "bg-amber-200",
+    "bg-emerald-200",
+    "bg-gray-200",
+    "bg-sky-200",
+  ];
   return (
     <div
-      className={` border-2 border-green-600  bg-${
-        cardColors[(id - 1) % cardColors.length]
+      className={`flex flex-col w-5/5 md:w-2/5 border-2  border-green-600 p-4  ${
+        cardColors ? `${cardColors[(id - 1) % cardColors.length]}` : null
       } rounded-xl text-md   text-center font-base text-gray-600 my-3 `}
     >
       <h2 className="text-md  font-bold">{title}</h2>
