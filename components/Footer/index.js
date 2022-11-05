@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="p-4 bg-white shadow flex flex-col items-center justify-center p-6 gap-4  dark:bg-gray-100">
+    <footer className="p-4 bg-white shadow flex flex-col items-center justify-center p-4 gap-4  dark:bg-gray-100">
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-900">
         © 2022
         <a href="#" className="hover:underline">

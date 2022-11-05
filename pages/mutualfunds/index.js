@@ -1,9 +1,20 @@
 import Image from "next/image";
+import { Fragment, useState } from "react";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 import typesOfMmutualFund from "../../public/img/mf.jpg";
 import { MutualFundCard } from "../../components/mutualfundCard";
 // import { Card } from "../../components/card";
 
 export default function MutualFunds() {
+  const [open, setOpen] = useState(1);
+
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
   const mf = [
     {
       id: 1,
@@ -231,6 +242,52 @@ export default function MutualFunds() {
             </div>
           </div>
         </div>
+      </div>
+      <div className=" px-20 my-5   ">
+        <h1 className="text-xl text-green-600  font-bold">
+          Power Of Compounding
+        </h1>
+        <Fragment>
+          <Accordion open={open === 1}>
+            <AccordionHeader onClick={() => handleOpen(1)}>
+              What is Power Of Compounding ?
+            </AccordionHeader>
+            <AccordionBody>
+              <div className="font-medium text-gray-500 dark:text-gray-400 md:h-full sm-h-full">
+                Time has the greatest influence on your investment portfolio
+                than any other force. Investments have the potential to increase
+                in value over time and hence longer the time frame the greater
+                the value. That’s why, financial advisors always recommend to
+                start saving early in order to gain benefits from the power of
+                compounding. Let’s explore this concept further.
+              </div>
+              <div className=" px-20 my-3 grid grid-cols-2 gap-3 md:h-full  text-md font-bold text-white ">
+                <div className="border-2 px-2 py-4 w-50 rounded   bg-sky-400">
+                  <p>
+                    Compounding basically is long term investment strategy which
+                    means to re-invest ones earnings from interest or dividend
+                    for receiving additional units
+                  </p>
+                </div>
+                <div className="border-2  px-2  py-4 w-50 rounded bg-purple-400">
+                  The benefit from compounding comes primarily from the fact
+                  that income keeps growing the principal to generate higher
+                  returns as time progresses
+                </div>
+                <div className="border-2  px-2 py-4 w-50 rounded bg-red-400">
+                  Higher rate of returns or longer investment duration plays a
+                  key role that leads to increase in principal amount
+                </div>
+                <div className="border-2  px-2 py-4 w-50  rounded bg-yellow-400">
+                  Hence, we can say that a successful investment planning is all
+                  about making the most of compounding by getting time on one’s
+                  side. Hence the earlier you start investing, the greater will
+                  be the power of compounding
+                </div>
+              </div>
+            </AccordionBody>
+          </Accordion>
+        </Fragment>
       </div>
     </>
   );
