@@ -10,7 +10,7 @@ import { MutualFundCard } from "../../components/mutualfundCard";
 // import { Card } from "../../components/card";
 
 export default function MutualFunds() {
-  const [open, setOpen] = useState(1);
+  const [open, setOpen] = useState(0);
 
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
