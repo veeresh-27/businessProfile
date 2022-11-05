@@ -1,3 +1,14 @@
 export default function About() {
-  return <div>About</div>;
+  return (
+    <>
+      <h1 className="text-2xl text-green-600 text-center font-bold">
+        About us{" "}
+      </h1>
+
+      <div className="border-2 px-20  ">
+        <h1 className="text-xl font-medium text-gray-600 ">Ishwar Patil</h1>
+        <p></p>
+      </div>
+    </>
+  );
 }

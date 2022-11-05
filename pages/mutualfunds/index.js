@@ -1,7 +1,43 @@
 import Image from "next/image";
 import typesOfMmutualFund from "../../public/img/mf.jpg";
+import { MutualFundCard } from "../../components/mutualfundCard";
+// import { Card } from "../../components/card";
 
 export default function MutualFunds() {
+  const mf = [
+    {
+      id: 1,
+      title: "Professional Managers",
+      desc: [
+        "Mutual funds are managed by professional people who have years of experience handling different types of assets. They are a group of dedicated team that handles all financial decisions based on the performance & prospects available in the market.",
+      ],
+    },
+    {
+      id: 2,
+      title: "Offers Convenience",
+      desc: "If saving time & convenience is what you seek then mutual funds are an ideal choice for investment. Because of low investment amount options, multiple choices based on one's life & financial goals, offering the ability to redeem them on any business day, mutual funds are much sought after.",
+    },
+    {
+      id: 3,
+      title: "Diversification",
+      desc: "Mutual funds help counter risks to a large extent by equally distributing your investments across diverse range of asset classes. Mutual funds work by the adage “Do Not Put All Your Eggs in One Basket”.",
+    },
+    {
+      id: 4,
+      title: "Counter Inflation",
+      desc: "Investing in mutual fund is a smart way of beating inflation as it helps investors to generate inflation-adjusted returns, without spending much time or energy on it. This choice of investing makes sure that the purchasing power of your money doesn't go downhill over some years.",
+    },
+    {
+      id: 5,
+      title: "Less Expensive",
+      desc: "As compared to investing directly in capital market, mutual funds offer investors the advantage of low cost investment. Most stock options require a huge capital to begin with, on the other hand mutual funds can be started with as low as Rs.500 per month & investors can derive benefit from the long-term equity investment.",
+    },
+    {
+      id: 6,
+      title: "Safe & Transparent",
+      desc: "Since every mutual fund is managed & regulated by SEBI, you need not worry as your investments are safe. SEBI has several regulations & legal frameworks in place which ensures that your investments are managed in a disciplined manner. Now it's true that every investment is subject to certain risks, however, prudent selection based on strong market knowledge &  fundamentally sound securities with diversification can help hedge such risks and generate high returns on your investments",
+    },
+  ];
   return (
     <>
       <h1 className="text-2xl text-green-600 text-center font-bold">
@@ -40,80 +76,10 @@ export default function MutualFunds() {
           Lets glance at why should one consider investing in mutual funds over
           other options to achieve their financial goals:
         </h3>
-        <div className="flex  my-5 gap-10 flex-wrap">
-          <div className="border  px-4 h-64 w-96 rounded-md text-ellipsis overflow-hidden">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Professional Managers
-            </h1>
-            <p className="text-md font-base text-gray-600 ">
-              Mutual funds are managed by professional people who have years of
-              experience handling different types of assets. They are a group of
-              dedicated team that handles all financial decisions based on the
-              performance & prospects available in the market.
-            </p>
-          </div>
-          <div className="border px-4 ">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Offers Convenience
-            </h1>
-            <p className="text-md font-base text-gray-600 ">
-              If saving time & convenience is what you seek then mutual funds
-              are an ideal choice for investment. Because of low investment
-              amount options, multiple choices based on ones life & financial
-              goals, offering the ability to redeem them on any business day,
-              mutual funds are much sought after.
-            </p>
-          </div>
-          <div className="border  px-4">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Diversification
-            </h1>
-            <p className="text-md font-base text-gray-600 ">
-              Mutual funds help counter risks to a large extent by equally
-              distributing your investments across diverse range of asset
-              classes. Mutual funds work by the adage “Do Not Put All Your Eggs
-              in One Basket”.
-            </p>
-          </div>
-          <div className="border px-4">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Counter Inflation
-            </h1>
-            <p className="text-md font-base text-gray-600">
-              Investing in mutual fund is a smart way of beating inflation as it
-              helps investors to generate inflation-adjusted returns, without
-              spending much time or energy on it. This choice of investing makes
-              sure that the purchasing power of your money doesnt go downhill
-              over some years.
-            </p>
-          </div>
-          <div className="border  px-4">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Less Expensive
-            </h1>
-            <p className="text-md font-base text-gray-600">
-              As compared to investing directly in capital market, mutual funds
-              offer investors the advantage of low cost investment. Most stock
-              options require a huge capital to begin with, on the other hand
-              mutual funds can be started with as low as Rs.500 per month &
-              investors can derive benefit from the long-term equity investment.
-            </p>
-          </div>
-          <div className="border px-4">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Safe & Transparent
-            </h1>
-            <p className="text-md font-base text-gray-600">
-              Since every mutual fund is managed & regulated by SEBI, you need
-              not worry as your investments are safe. SEBI has several
-              regulations & legal frameworks in place which ensures that your
-              investments are managed in a disciplined manner. Now its true that
-              every investment is subject to certain risks, however, prudent
-              selection based on strong market knowledge & fundamentally sound
-              securities with diversification can help hedge such risks and
-              generate high returns on your investments.
-            </p>
-          </div>
+        <div className="flex  my-5 gap-10 flex-wrap justify-center">
+          {mf.map(({ id, title, desc }) => (
+            <MutualFundCard key={id} title={title} desc={desc} />
+          ))}
         </div>
       </div>
       <div className="border px-20 my-5   ">
