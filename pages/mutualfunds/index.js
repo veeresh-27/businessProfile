@@ -253,7 +253,7 @@ export default function MutualFunds() {
               What is Power Of Compounding ?
             </AccordionHeader>
             <AccordionBody>
-              <div className="font-medium text-gray-500 dark:text-gray-400 md:h-full sm-h-full">
+              <div className="font-medium text-gray-500 dark:text-gray-400 md:h-full sm-h-50%">
                 Time has the greatest influence on your investment portfolio
                 than any other force. Investments have the potential to increase
                 in value over time and hence longer the time frame the greater

@@ -6,8 +6,8 @@ export default function About() {
       </h1>
 
       <div className="border-2 px-20  ">
-        <h1 className="text-xl font-medium text-gray-600 ">Ishwar Patil</h1>
-        <p></p>
+        <h1 className="text-xl font-medium text-gray-600 ">Who we are </h1>
+          <
       </div>
     </>
   );
