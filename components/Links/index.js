@@ -41,8 +41,10 @@ export const Links = ({ isOnMobile = false, setMobNav }) => {
 
   return (
     <div
-      className={`relative flex items-center justify-between gap-4 text-l  font-medium p-3 ${
-        isOnMobile ? "flex-col text-gray-200" : "text-gray-600"
+      className={`flex items-center gap-4 text-l  font-medium p-3 ${
+        isOnMobile
+          ? "flex-col text-gray-200 gap-20"
+          : "justify-between text-gray-600"
       }`}
     >
       {navLinkTitle.map(({ name, title, style, link }) => (

@@ -29,7 +29,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="flex flex-col overflow-x-hidden">
+    <div className="flex flex-col">
       <Head>
         <title>Financial Advisor</title>
         <meta

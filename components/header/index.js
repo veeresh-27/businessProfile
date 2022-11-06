@@ -16,15 +16,15 @@ export function Header() {
         <Links />
       </div>
       <div
-        className="md:hidden p-3 cursor-pointer relative"
+        className="md:hidden p-3 cursor-pointer"
         onClick={() => setMobNav(!mobNav)}
       >
         <IconBurger />
       </div>
       <div
-        className={`flex flex-col rounded absolute w-1/3 bg-gray-900 top-12 right-0 p-3 z-99  ${
-          mobNav ? "transform w-full" : "transform w-0 opacity-0"
-        } translate-all ease-in-out duration-200`}
+        className={` md:hidden rounded fixed inset-1 bg-gray-900/95 left-1/3 top-12  p-3 z-9 ${
+          mobNav ? "flex flex-col justify-center" : "hidden"
+        } `}
       >
         <Links isOnMobile setMobNav={setMobNav} />
       </div>
