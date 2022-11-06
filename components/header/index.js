@@ -23,9 +23,7 @@ export function Header() {
       </div>
       <div
         className={`flex flex-col rounded absolute w-1/3 bg-gray-900 top-12 right-0 p-3 z-99  ${
-          mobNav
-            ? "transform translate-x-0"
-            : "transform translate-x-full opacity-0"
+          mobNav ? "transform w-full" : "transform w-0 opacity-0"
         } translate-all ease-in-out duration-200`}
       >
         <Links isOnMobile setMobNav={setMobNav} />

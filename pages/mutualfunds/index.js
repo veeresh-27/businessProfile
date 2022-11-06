@@ -1,7 +1,54 @@
 import Image from "next/image";
+import { Fragment, useState } from "react";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 import typesOfMmutualFund from "../../public/img/mf.jpg";
+import { MutualFundCard } from "../../components/mutualfundCard";
+// import { Card } from "../../components/card";
 
 export default function MutualFunds() {
+  const [open, setOpen] = useState(0);
+
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
+  const mf = [
+    {
+      id: 1,
+      title: "Professional Managers",
+      desc: [
+        "Mutual funds are managed by professional people who have years of experience handling different types of assets. They are a group of dedicated team that handles all financial decisions based on the performance & prospects available in the market.",
+      ],
+    },
+    {
+      id: 2,
+      title: "Offers Convenience",
+      desc: "If saving time & convenience is what you seek then mutual funds are an ideal choice for investment. Because of low investment amount options, multiple choices based on one's life & financial goals, offering the ability to redeem them on any business day, mutual funds are much sought after.",
+    },
+    {
+      id: 3,
+      title: "Diversification",
+      desc: "Mutual funds help counter risks to a large extent by equally distributing your investments across diverse range of asset classes. Mutual funds work by the adage “Do Not Put All Your Eggs in One Basket”.",
+    },
+    {
+      id: 4,
+      title: "Counter Inflation",
+      desc: "Investing in mutual fund is a smart way of beating inflation as it helps investors to generate inflation-adjusted returns, without spending much time or energy on it. This choice of investing makes sure that the purchasing power of your money doesn't go downhill over some years.",
+    },
+    {
+      id: 5,
+      title: "Less Expensive",
+      desc: "As compared to investing directly in capital market, mutual funds offer investors the advantage of low cost investment. Most stock options require a huge capital to begin with, on the other hand mutual funds can be started with as low as Rs.500 per month & investors can derive benefit from the long-term equity investment.",
+    },
+    {
+      id: 6,
+      title: "Safe & Transparent",
+      desc: "Since every mutual fund is managed & regulated by SEBI, you need not worry as your investments are safe. SEBI has several regulations & legal frameworks in place which ensures that your investments are managed in a disciplined manner. Now it's true that every investment is subject to certain risks, however, prudent selection based on strong market knowledge &  fundamentally sound securities with diversification can help hedge such risks and generate high returns on your investments",
+    },
+  ];
   return (
     <>
       <h1 className="text-2xl text-green-600 text-center font-bold">
@@ -40,80 +87,10 @@ export default function MutualFunds() {
           Lets glance at why should one consider investing in mutual funds over
           other options to achieve their financial goals:
         </h3>
-        <div className="flex  my-5 gap-10 flex-wrap">
-          <div className="border  px-4 h-64 w-96 rounded-md text-ellipsis overflow-hidden">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Professional Managers
-            </h1>
-            <p className="text-md font-base text-gray-600 ">
-              Mutual funds are managed by professional people who have years of
-              experience handling different types of assets. They are a group of
-              dedicated team that handles all financial decisions based on the
-              performance & prospects available in the market.
-            </p>
-          </div>
-          <div className="border px-4 ">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Offers Convenience
-            </h1>
-            <p className="text-md font-base text-gray-600 ">
-              If saving time & convenience is what you seek then mutual funds
-              are an ideal choice for investment. Because of low investment
-              amount options, multiple choices based on ones life & financial
-              goals, offering the ability to redeem them on any business day,
-              mutual funds are much sought after.
-            </p>
-          </div>
-          <div className="border  px-4">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Diversification
-            </h1>
-            <p className="text-md font-base text-gray-600 ">
-              Mutual funds help counter risks to a large extent by equally
-              distributing your investments across diverse range of asset
-              classes. Mutual funds work by the adage “Do Not Put All Your Eggs
-              in One Basket”.
-            </p>
-          </div>
-          <div className="border px-4">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Counter Inflation
-            </h1>
-            <p className="text-md font-base text-gray-600">
-              Investing in mutual fund is a smart way of beating inflation as it
-              helps investors to generate inflation-adjusted returns, without
-              spending much time or energy on it. This choice of investing makes
-              sure that the purchasing power of your money doesnt go downhill
-              over some years.
-            </p>
-          </div>
-          <div className="border  px-4">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Less Expensive
-            </h1>
-            <p className="text-md font-base text-gray-600">
-              As compared to investing directly in capital market, mutual funds
-              offer investors the advantage of low cost investment. Most stock
-              options require a huge capital to begin with, on the other hand
-              mutual funds can be started with as low as Rs.500 per month &
-              investors can derive benefit from the long-term equity investment.
-            </p>
-          </div>
-          <div className="border px-4">
-            <h1 className="text-lg text-green-600  my-4 font-bold">
-              Safe & Transparent
-            </h1>
-            <p className="text-md font-base text-gray-600">
-              Since every mutual fund is managed & regulated by SEBI, you need
-              not worry as your investments are safe. SEBI has several
-              regulations & legal frameworks in place which ensures that your
-              investments are managed in a disciplined manner. Now its true that
-              every investment is subject to certain risks, however, prudent
-              selection based on strong market knowledge & fundamentally sound
-              securities with diversification can help hedge such risks and
-              generate high returns on your investments.
-            </p>
-          </div>
+        <div className="flex  my-5 gap-10 flex-wrap justify-center">
+          {mf.map(({ id, title, desc }) => (
+            <MutualFundCard key={id} title={title} desc={desc} />
+          ))}
         </div>
       </div>
       <div className="border px-20 my-5   ">
@@ -221,9 +198,9 @@ export default function MutualFunds() {
         <h1 className="text-center py-4 text-lg text-green-600  font-bold">
           Benefits Of SIP
         </h1>
-        <div className="grid grid-cols-2 ">
-          <div className=" box-border p-3 mx-3 bg-sky-400  rounded">
-            <div className="text-center">
+        <div className="flex flex-wrap   my-5 gap-4  item-center ">
+          <div className=" box-border p-3 mx-3 bg-sky-400  rounded ">
+            <div className="text-center ">
               <h1>CONVENIENCE</h1>
               <p>
                 Offering a hassle-free mode for investing, one can directly get
@@ -232,8 +209,8 @@ export default function MutualFunds() {
               </p>
             </div>
           </div>
-          <div className="box-border   p-3  mx-3 bg-red-400 rounded">
-            <div className="text-center">
+          <div className="box-border p-3 mx-3 bg-red-400 rounded">
+            <div className="text-center ">
               <h1>DISCIPLINED SAVING</h1>
               <p>
                 By investing through SIP, you commit to saving regularly. So,
@@ -243,7 +220,7 @@ export default function MutualFunds() {
             </div>
           </div>
 
-          <div className="box-border    p-3  mx-3 my-3 bg-green-500 rounded">
+          <div className="box-border p-3 mx-3 bg-green-500  rounded">
             <div className="text-center">
               <h1>FLEXIBILITY</h1>
               <p>
@@ -253,7 +230,7 @@ export default function MutualFunds() {
               </p>
             </div>
           </div>
-          <div className="box-border    p-3 my-3 mx-3 bg-yellow-500  rounded">
+          <div className="box-border  p-3 mx-3 bg-yellow-500    rounded">
             <div className="text-center">
               <h1>LONG TERM GAINS</h1>
               <p>
@@ -265,6 +242,52 @@ export default function MutualFunds() {
             </div>
           </div>
         </div>
+      </div>
+      <div className=" px-20 my-5   ">
+        <h1 className="text-xl text-green-600  font-bold">
+          Power Of Compounding
+        </h1>
+        <Fragment>
+          <Accordion open={open === 1}>
+            <AccordionHeader onClick={() => handleOpen(1)}>
+              What is Power Of Compounding ?
+            </AccordionHeader>
+            <AccordionBody>
+              <div className="font-medium text-gray-500 dark:text-gray-400 md:h-full sm-h-90%">
+                Time has the greatest influence on your investment portfolio
+                than any other force. Investments have the potential to increase
+                in value over time and hence longer the time frame the greater
+                the value. That’s why, financial advisors always recommend to
+                start saving early in order to gain benefits from the power of
+                compounding. Let’s explore this concept further.
+              </div>
+              <div className=" px-20 my-3 grid grid-cols-2 gap-3 md:h-full  text-md font-bold text-white ">
+                <div className="border-2 px-2 py-4 w-50 rounded   bg-sky-400">
+                  <p>
+                    Compounding basically is long term investment strategy which
+                    means to re-invest ones earnings from interest or dividend
+                    for receiving additional units
+                  </p>
+                </div>
+                <div className="border-2  px-2  py-4 w-50 rounded bg-purple-400">
+                  The benefit from compounding comes primarily from the fact
+                  that income keeps growing the principal to generate higher
+                  returns as time progresses
+                </div>
+                <div className="border-2  px-2 py-4 w-50 rounded bg-red-400">
+                  Higher rate of returns or longer investment duration plays a
+                  key role that leads to increase in principal amount
+                </div>
+                <div className="border-2  px-2 py-4 w-50  rounded bg-yellow-400">
+                  Hence, we can say that a successful investment planning is all
+                  about making the most of compounding by getting time on one’s
+                  side. Hence the earlier you start investing, the greater will
+                  be the power of compounding
+                </div>
+              </div>
+            </AccordionBody>
+          </Accordion>
+        </Fragment>
       </div>
     </>
   );
