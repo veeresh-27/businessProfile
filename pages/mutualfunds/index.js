@@ -198,9 +198,9 @@ export default function MutualFunds() {
         <h1 className="text-center py-4 text-lg text-green-600  font-bold">
           Benefits Of SIP
         </h1>
-        <div className="grid grid-cols-2 ">
-          <div className=" box-border p-3 mx-3 bg-sky-400  rounded">
-            <div className="text-center">
+        <div className="flex flex-wrap   my-5 gap-4  item-center ">
+          <div className=" box-border p-3 mx-3 bg-sky-400  rounded ">
+            <div className="text-center ">
               <h1>CONVENIENCE</h1>
               <p>
                 Offering a hassle-free mode for investing, one can directly get
@@ -209,8 +209,8 @@ export default function MutualFunds() {
               </p>
             </div>
           </div>
-          <div className="box-border   p-3  mx-3 bg-red-400 rounded">
-            <div className="text-center">
+          <div className="box-border p-3 mx-3 bg-red-400 rounded">
+            <div className="text-center ">
               <h1>DISCIPLINED SAVING</h1>
               <p>
                 By investing through SIP, you commit to saving regularly. So,
@@ -220,7 +220,7 @@ export default function MutualFunds() {
             </div>
           </div>
 
-          <div className="box-border    p-3  mx-3 my-3 bg-green-500 rounded">
+          <div className="box-border p-3 mx-3 bg-green-500  rounded">
             <div className="text-center">
               <h1>FLEXIBILITY</h1>
               <p>
@@ -230,7 +230,7 @@ export default function MutualFunds() {
               </p>
             </div>
           </div>
-          <div className="box-border    p-3 my-3 mx-3 bg-yellow-500  rounded">
+          <div className="box-border  p-3 mx-3 bg-yellow-500    rounded">
             <div className="text-center">
               <h1>LONG TERM GAINS</h1>
               <p>
@@ -253,7 +253,7 @@ export default function MutualFunds() {
               What is Power Of Compounding ?
             </AccordionHeader>
             <AccordionBody>
-              <div className="font-medium text-gray-500 dark:text-gray-400 md:h-full sm-h-50%">
+              <div className="font-medium text-gray-500 dark:text-gray-400 md:h-full sm-h-90%">
                 Time has the greatest influence on your investment portfolio
                 than any other force. Investments have the potential to increase
                 in value over time and hence longer the time frame the greater
