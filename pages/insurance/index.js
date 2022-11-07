@@ -1,5 +1,5 @@
 // import insurance from "../public/img/insurance.png";
-import family_security from "../../public/img/adv.jpg";
+import all from "../../public/img/all.jpg";
 import banner from "../../public/img/personalbanner_in.jpg";
 
 import personal from "../../public/img/personal.png";
@@ -212,14 +212,14 @@ export default function Insurance() {
             Why A Health Plan?
           </h3>
           <p className="text-md font-base text-gray-500 my-3">
-            In today's fast paced lives that we live and in a race to excel in
+            In todays fast paced lives that we live and in a race to excel in
             everything, we forget one of the most important asset we own i.e.
             our health. Due to various habits & changing lifestyles, health
             related concerns have just become increasingly alarming. We may not
             be to go back to slow down the pace of our lives but can definitely
-            guard ourselves from its side effect. Here's when an efficient
-            health cover comes handy so that any sudden illness doesn't derail
-            our financial freedom.
+            guard ourselves from its side effect. Here when an efficient health
+            cover comes handy so that any sudden illness doesnt derail our
+            financial freedom.
           </p>
           <p className="text-md font-base text-gray-500 my-3">
             Medical assistance comes with a price tag, such that people are
@@ -258,7 +258,7 @@ export default function Insurance() {
             circumstance.
           </p>
           <div className=" flex align-center justify-center">
-            <Image src={personal} alt="" className="mt-10 w-90  md:px-30" />
+            <Image src={personal} alt="" className="md:px-30" />
           </div>
           <div className="mt-10">
             <h1 className="text-md font-medium text-green-600 my-3">
@@ -291,11 +291,11 @@ export default function Insurance() {
         </div>
         <div>
           <div className=" flex align-center justify-center">
-            <Image src={family_security} alt="" />
+            <Image src={all} alt="" />
           </div>
         </div>
       </div>
-      <div className="mt-6 mx-9">
+      <div className="mt-6 mx-9 px-7">
         <h1 className="text-xl text-green-600  font-bold">
           What does the policy cover?
         </h1>
@@ -304,7 +304,7 @@ export default function Insurance() {
             Accidental Death
           </h2>
           <p className=" text-md font-base text-gray-600 ">
-            Accidental death coverage gives compensation on the policyholder's
+            Accidental death coverage gives compensation on the policyholders
             death caused by bodily injury resulting out of an accident. The
             nominee will receive entire sum assured offered by the insurer.
           </p>
@@ -335,7 +335,7 @@ export default function Insurance() {
             Accidental Dismemberment
           </h2>
           <p className=" text-md font-base text-gray-600 ">
-            If policyholder's body part has been dismembered or severed in the
+            If policyholders body part has been dismembered or severed in the
             accident then the person can claim the sum insured.
           </p>
         </div>
@@ -346,8 +346,8 @@ export default function Insurance() {
           </h2>
           <p className=" text-md font-base text-gray-600">
             Funeral expenses can be claimed in case of accidental death.
-            Expenses incurred for transportation of policyholder's dead body
-            from the accident spot to the residence place is covered.
+            Expenses incurred for transportation of policyholders dead body from
+            the accident spot to the residence place is covered.
           </p>
         </div>
         <div className="mt-4">
