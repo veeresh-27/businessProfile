@@ -1,5 +1,8 @@
 // import insurance from "../public/img/insurance.png";
+import family_security from "../../public/img/adv.jpg";
 import banner from "../../public/img/personalbanner_in.jpg";
+
+import personal from "../../public/img/personal.png";
 import insurance from "../../public/img/insurance.png";
 import Image from "next/image";
 
@@ -227,14 +230,16 @@ export default function Insurance() {
             cover as per your requirements.
           </p>
         </div>
-        <div className="mx-9 p-4 mt-10">
+        <div className="mx-9 p-4 mt-10 ">
           <h1 className=" text-xl font-bold text-green-600">
             Personal Accident
           </h1>
-          <Image src={banner} className="px-10 mt-6" alt="" />
-          <h2 className=" text-md font-medium text-green-600 my-3>Why Personal">
+          <div className=" flex align-center justify-center">
+            <Image src={banner} className="px-10 mt-6" alt="" />
+          </div>
+          <h2 className=" text-md font-medium text-green-600 my-3 mt-6">
             {" "}
-            Accident Insurance?
+            Why Personal Accident Insurance?
           </h2>
           <p className="text-md font-base text-gray-500 my-3">
             Life is uncertain & immeasurable. Accidents & uneventful incidents
@@ -251,6 +256,125 @@ export default function Insurance() {
             certain relief, insurance companies have devised various policies
             that serve as true life savers when met with an unfortunate
             circumstance.
+          </p>
+          <div className=" flex align-center justify-center">
+            <Image src={personal} alt="" className="mt-10 w-90  md:px-30" />
+          </div>
+          <div className="mt-10">
+            <h1 className="text-md font-medium text-green-600 my-3">
+              Advantages of Personal Accident Policy:
+            </h1>
+            <p className="text-md font-base text-gray-500 my-3">
+              Give yourself a minute to think about what will happen to your
+              dependents if you were disabled because of an accident? There will
+              be no monthly income, no cash inflows but expenses will continue
+              to rise. In such case, an accident insurance policy will help you
+              bring these expenses under control.
+            </p>
+            <p className="text-md font-normal text-green-600 my-3">
+              Additional advantages are:
+            </p>
+            <div className="mx-20   text-md font-base text-gray-500 ">
+              <p>Substantial coverage offered with low premium.</p>
+              <p>
+                Double indemnity for disability for mishaps occurred while
+                traveling in public transport.
+              </p>
+              <p>Easy claim process.</p>
+              <p>Highly customized plan available.</p>
+              <p>World wide coverage.</p>
+              <p>Can be bought for individual & family.</p>
+              <p>Child education advantage.</p>
+              <p>No requirement of medical tests & documentation.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className=" flex align-center justify-center">
+            <Image src={family_security} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="mt-6 mx-9">
+        <h1 className="text-xl text-green-600  font-bold">
+          What does the policy cover?
+        </h1>
+        <div className="mt-4">
+          <h2 className="text-md text-green-600 font-medium my-2 ">
+            Accidental Death
+          </h2>
+          <p className=" text-md font-base text-gray-600 ">
+            Accidental death coverage gives compensation on the policyholder's
+            death caused by bodily injury resulting out of an accident. The
+            nominee will receive entire sum assured offered by the insurer.
+          </p>
+        </div>
+        <div className="mt-4">
+          {" "}
+          <h2 className="text-md text-green-600 font-medium my-2">
+            Permanent or Total Disability
+          </h2>
+          <p className=" text-md font-base text-gray-600 ">
+            If the accident causes permanent or total disability, then 100% of
+            the sum insured is payable to the policyholder.
+          </p>
+        </div>
+        <div className="mt-4">
+          {" "}
+          <h2 className="text-md text-green-600 font-medium my-2">
+            Permanent or Total Disability
+          </h2>
+          <p className=" text-md font-base text-gray-600 ">
+            If the accident causes permanent or total disability, then 100% of
+            the sum insured is payable to the policyholder.
+          </p>
+        </div>
+        <div className="mt-4">
+          {" "}
+          <h2 className="text-md text-green-600 font-medium my-2">
+            Accidental Dismemberment
+          </h2>
+          <p className=" text-md font-base text-gray-600 ">
+            If policyholder's body part has been dismembered or severed in the
+            accident then the person can claim the sum insured.
+          </p>
+        </div>
+        <div className="mt-4">
+          {" "}
+          <h2 className="text-md text-green-600 font-medium my-2">
+            Additional Benefits
+          </h2>
+          <p className=" text-md font-base text-gray-600">
+            Funeral expenses can be claimed in case of accidental death.
+            Expenses incurred for transportation of policyholder's dead body
+            from the accident spot to the residence place is covered.
+          </p>
+        </div>
+        <div className="mt-4">
+          <h2 className="text-md text-green-600 font-medium my-2">
+            Daily Hospitalization Expenses
+          </h2>
+          <p className=" text-md font-base text-gray-600 ">
+            Monetary relief offered to the patient on daily basis on
+            hospitalization.
+          </p>
+        </div>
+        <div className="mt-4">
+          {" "}
+          <h2 className="text-md text-green-600 font-medium my-2">Burns</h2>
+          <p className=" text-md font-base text-gray-600 ">
+            A certain amount of the policy sum is payable, when an accident
+            results in hospitalization & the victim is being treated for burn
+            injuries.
+          </p>
+        </div>
+        <div className="mt-4">
+          {" "}
+          <h2 className="text-md text-green-600 font-medium  my-2">Bonuses</h2>
+          <p className=" text-md font-base text-gray-600 ">
+            Some policies may offer bonuses to the dependent kids of the
+            policyholder. This becomes helpful in case of the death of the
+            policyholder or extension of treatment period.
           </p>
         </div>
       </div>

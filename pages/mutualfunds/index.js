@@ -195,12 +195,12 @@ export default function MutualFunds() {
           of investments for retail investors who lack resources to pursue
           active investments.
         </p>
-        <h1 className="text-center py-4 text-lg text-green-600  font-bold">
+        <h1 className="text-center  py-4 text-lg text-green-600  font-bold">
           Benefits Of SIP
         </h1>
-        <div className="flex flex-wrap   my-5 gap-4  item-center ">
+        <div className="flex-wrap align-center justify-center  my-5 gap-4  item-center  ">
           <div className=" box-border p-3 mx-3 bg-sky-400  rounded ">
-            <div className="text-center ">
+            <div className="text-center  ">
               <h1>CONVENIENCE</h1>
               <p>
                 Offering a hassle-free mode for investing, one can directly get
@@ -209,7 +209,7 @@ export default function MutualFunds() {
               </p>
             </div>
           </div>
-          <div className="box-border p-3 mx-3 bg-red-400 rounded">
+          <div className="box-border  mt-4 p-3 mx-3 bg-red-400 rounded">
             <div className="text-center ">
               <h1>DISCIPLINED SAVING</h1>
               <p>
@@ -220,7 +220,7 @@ export default function MutualFunds() {
             </div>
           </div>
 
-          <div className="box-border p-3 mx-3 bg-green-500  rounded">
+          <div className="box-border mt-4  p-3 mx-3 bg-green-500  rounded">
             <div className="text-center">
               <h1>FLEXIBILITY</h1>
               <p>
@@ -230,7 +230,7 @@ export default function MutualFunds() {
               </p>
             </div>
           </div>
-          <div className="box-border  p-3 mx-3 bg-yellow-500    rounded">
+          <div className="box-border  mt-4  p-3 mx-3 bg-yellow-500    rounded">
             <div className="text-center">
               <h1>LONG TERM GAINS</h1>
               <p>
