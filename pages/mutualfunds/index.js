@@ -16,7 +16,7 @@ export default function MutualFunds() {
       id: 1,
       title: "Professional Managers",
       desc: [
-        " experience handling different types of assets. They are a group of dedicated team that handles all financial decisions based on the performance & prospects available in the market.",
+        "Mutual funds are managed by professional people who have years of experience handling different types of assets. They are a group of dedicated team that handles all financial decisions based on the performance & prospects available in the market.",
       ],
     },
     {
