@@ -1,7 +1,7 @@
 // import insurance from "../public/img/insurance.png";
-
-// import life from "../public/img/life-insurance.png";
-// import Image from "next/image";
+import banner from "../../public/img/personalbanner_in.jpg";
+import insurance from "../../public/img/insurance.png";
+import Image from "next/image";
 
 import { InsuranceCard } from "../../components/insuranceCard";
 
@@ -136,7 +136,15 @@ export default function Insurance() {
               different stages of life.
             </p>
             <div className="text-md font-base text-gray-600">
-              {/*<Image className="rounded-md" src={life} alt="" />*/}
+              <div className=" justify-center ">
+                {" "}
+                <Image
+                  className="rounded-md md:px-40  lg:hidden ... "
+                  src={insurance}
+                  alt=""
+                />
+              </div>
+
               <p>
                 There is no doubt that life insurance is a must have for
                 everyone. Hence its very crucial to have a complete
@@ -191,6 +199,59 @@ export default function Insurance() {
               ))}
             </div>
           </div>
+        </div>
+        <div className="mx-9 p-4 mt-10 ">
+          <h1 className=" text-xl font-bold text-green-600">
+            Health Insurance
+          </h1>
+
+          <h3 className="text-normal font-bold text-green-600">
+            Why A Health Plan?
+          </h3>
+          <p className="text-md font-base text-gray-500 my-3">
+            In today's fast paced lives that we live and in a race to excel in
+            everything, we forget one of the most important asset we own i.e.
+            our health. Due to various habits & changing lifestyles, health
+            related concerns have just become increasingly alarming. We may not
+            be to go back to slow down the pace of our lives but can definitely
+            guard ourselves from its side effect. Here's when an efficient
+            health cover comes handy so that any sudden illness doesn't derail
+            our financial freedom.
+          </p>
+          <p className="text-md font-base text-gray-500 my-3">
+            Medical assistance comes with a price tag, such that people are
+            forced to sell of their assets or rely on borrowers to meet the
+            expenses. Such unforeseen events can be easily dealt with a strong
+            health insurance plans. So guard your finances by opting for
+            complete protection for you & your family by getting adequate health
+            cover as per your requirements.
+          </p>
+        </div>
+        <div className="mx-9 p-4 mt-10">
+          <h1 className=" text-xl font-bold text-green-600">
+            Personal Accident
+          </h1>
+          <Image src={banner} className="px-10 mt-6" alt="" />
+          <h2 className=" text-md font-medium text-green-600 my-3>Why Personal">
+            {" "}
+            Accident Insurance?
+          </h2>
+          <p className="text-md font-base text-gray-500 my-3">
+            Life is uncertain & immeasurable. Accidents & uneventful incidents
+            never ring a warning bell before they strike. Road mishaps,
+            accidents have gone up tremendously & the victims along with their
+            families suffer the consequences of the such unfortunate situation.
+            Alarming statistics report about 1214 road related death that occur
+            in India every year; this should be an eye opener on the perils an
+            individual is exposed daily.
+          </p>
+          <p className="text-md font-base text-gray-500 my-3">
+            While minor accidents can cause temporary hurdles, major ones can
+            lead to disability for life or even demise. With a view to providing
+            certain relief, insurance companies have devised various policies
+            that serve as true life savers when met with an unfortunate
+            circumstance.
+          </p>
         </div>
       </div>
     </>
