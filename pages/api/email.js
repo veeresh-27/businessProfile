@@ -8,7 +8,7 @@ export default function handler(req, res) {
     service: "gmail",
     auth: {
       user: "veereshrm789@gmail.com",
-      pass: "qbbkwjqedfiqieey",
+      pass: "wbjaqqdpmtvssest",
     },
   });
 

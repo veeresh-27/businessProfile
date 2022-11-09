@@ -11,7 +11,7 @@ export default function Contact() {
     await axios
       .post("/api/email", { email })
       .then((res) => {
-        alert("Send Mail To You");
+        res(alert("Send Mail To You"));
         setEmail("");
       })
       .catch((e) => console.log(e));
