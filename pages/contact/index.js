@@ -9,9 +9,9 @@ export default function Contact() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post("/api/email", { email })
+      .post("/api/sib", { email })
       .then((res) => {
-        res(alert("Send Mail To You"));
+        alert("Send Mail To You");
         setEmail("");
       })
       .catch((e) => console.log(e));
