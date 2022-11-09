@@ -11,8 +11,10 @@ export default function Contact() {
     await axios
       .post("/api/sib", { email })
       .then((res) => {
-        alert("Send Mail To You");
+        alert(`We have sent an email to ${email}`);
         setEmail("");
+        setName("");
+        setMessage("");
       })
       .catch((e) => console.log(e));
     const Data = {

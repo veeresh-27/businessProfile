@@ -2,7 +2,7 @@ import SibApiV3Sdk from "sib-api-v3-sdk";
 
 export default function handler(req, res) {
   SibApiV3Sdk.ApiClient.instance.authentications["api-key"].apiKey =
-    "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";
+    "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";
   const { email } = req.body;
   new SibApiV3Sdk.TransactionalEmailsApi()
     .sendTransacEmail({
