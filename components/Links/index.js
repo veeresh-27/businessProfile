@@ -27,6 +27,7 @@ export const Links = ({ isOnMobile = false, setMobNav }) => {
     },
     {
       name: "Contact-Us",
+      link: "/contact",
       style:
         "border-2 border-green-600 text-green-600 cursor-pointer p-0.5 hover:bg-green-600 hover:text-white transition-all ease-in-out duration-500 rounded",
     },
@@ -60,7 +61,11 @@ export const Links = ({ isOnMobile = false, setMobNav }) => {
         >
           {name}
           {name !== "Contact-Us" && (
-            <div className={`h-1 w-0 rounded translate-all ease-in duration-200 opacity-0 bg-green-600 group-hover:opacity-100 group-hover:w-3/5 ${router.pathname === link ? 'opacity-100 w-3/5':null}`}></div>
+            <div
+              className={`h-1 w-0 rounded translate-all ease-in duration-200 opacity-0 bg-green-600 group-hover:opacity-100 group-hover:w-3/5 ${
+                router.pathname === link ? "opacity-100 w-3/5" : null
+              }`}
+            ></div>
           )}
         </div>
       ))}
