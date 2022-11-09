@@ -9,7 +9,7 @@ export default function Contact() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:3000/api/email", { email })
+      .post("/api/email", { email })
       .then((res) => {
         alert("Send Mail To You");
         setEmail("");
