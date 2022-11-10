@@ -4,7 +4,7 @@ import life from "../public/img/life-insurance.png";
 import cal from "../public/img/premium_calculator.png";
 import { Card } from "../components/card";
 import Slider from "react-slick";
-import Image from "next/image";
+//import Image from "next/image";
 
 export default function Home() {
   //TODO Spam prevention and security measures to avoid overwhelming with emails
@@ -44,20 +44,20 @@ export default function Home() {
     },
   ];
 
-  const carouselImages = [
-    {
-      img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      alt: "Carousel-img",
-    },
-    {
-      img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      alt: "Carousel-img",
-    },
-    {
-      img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      alt: "Carousel-img",
-    },
-  ];
+  // const carouselImages = [
+  //   {
+  //     img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  //     alt: "Carousel-img",
+  //   },
+  //   {
+  //     img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  //     alt: "Carousel-img",
+  //   },
+  //   {
+  //     img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  //     alt: "Carousel-img",
+  //   },
+  // ];
   return (
     <div className="flex flex-col">
       <Head>
@@ -136,7 +136,7 @@ export default function Home() {
         <div className="flex justify-center">
           <button
             type="button"
-            className="px-6 py-2 border-2 border-green-600 text-white font-medium text-l rounded bg-green-600 hover:bg-green-800 hover:text-white transition-all ease-in-out duration-200"
+            className="px-6 py-2 border-2 border-green-600 text-white font-medium text-l rounded bg-green-600 hover:bg-green-700 hover:text-white transition-all ease-in-out duration-200"
           >
             Get Started
           </button>
