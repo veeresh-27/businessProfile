@@ -274,19 +274,36 @@ export default function Insurance() {
             <p className="text-md font-normal text-green-600 my-3">
               Additional advantages are:
             </p>
-            <div className="mx-20   text-md font-base text-gray-500 ">
-              <p>Substantial coverage offered with low premium.</p>
-              <p>
+            {/*<div className="mx-20   text-md font-base text-gray-500 ">*/}
+            {/*  <p>Substantial coverage offered with low premium.</p>*/}
+            {/*  <p>*/}
+            {/*    Double indemnity for disability for mishaps occurred while*/}
+            {/*    traveling in public transport.*/}
+            {/*  </p>*/}
+            {/*  <p>Easy claim process.</p>*/}
+            {/*  <p>Highly customized plan available.</p>*/}
+            {/*  <p>World wide coverage.</p>*/}
+            {/*  <p>Can be bought for individual & family.</p>*/}
+            {/*  <p>Child education advantage.</p>*/}
+            {/*  <p>No requirement of medical tests & documentation.</p>*/}
+            {/*</div>*/}
+            <ul
+              role="list"
+              className=" mx-20 marker:text-green-600 list-disc pl-5 space-y-3 text-slate-400"
+            >
+              <li>Substantial coverage offered with low premium</li>
+              <li>
+                {" "}
                 Double indemnity for disability for mishaps occurred while
                 traveling in public transport.
-              </p>
-              <p>Easy claim process.</p>
-              <p>Highly customized plan available.</p>
-              <p>World wide coverage.</p>
-              <p>Can be bought for individual & family.</p>
-              <p>Child education advantage.</p>
-              <p>No requirement of medical tests & documentation.</p>
-            </div>
+              </li>
+              <li>Easy claim process</li>
+              <li>Highly customized plan available</li>
+              <li>World wide coverage</li>
+              <li>Can be bought for individual & family</li>
+              <li>Child education advantage</li>
+              <li>No requirement of medical tests & documentation</li>
+            </ul>
           </div>
         </div>
         <div>
