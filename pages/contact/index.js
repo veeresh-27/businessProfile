@@ -8,20 +8,38 @@ export default function Contact() {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    await axios
-      .post("/api/sib", { email })
-      .then((res) => {
-        alert(`We have sent an email to ${email}`);
-        setEmail("");
-        setName("");
-        setMessage("");
-      })
-      .catch((e) => console.log(e));
     const Data = {
       name,
       email,
       message,
     };
+    // await axios
+    //   .post("/api/sib", { Data })
+    //   .then((res) => {
+    //     alert(`We have sent an email to ${email}`);
+    //     setEmail("");
+    //     setName("");
+    //     setMessage("");
+    //   })
+    //   .catch((e) => console.log(e));
+    try {
+      await fetch("/api/sib", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(Data),
+      }).then((res) => {
+        alert(`We have sent an email to ${email}`);
+        setEmail("");
+        setName("");
+        setMessage("");
+      });
+
+      //if sucess do whatever you like, i.e toast notification
+    } catch (error) {
+      // toast error message. whatever you wish
+      console.log(error);
+    }
+
     //const JSONData = JSON.stringify(Data);
     //console.log(JSONData);
     // const endpoint = "/api/form";

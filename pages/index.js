@@ -5,6 +5,7 @@ import cal from "../public/img/premium_calculator.png";
 import { Card } from "../components/card";
 
 export default function Home() {
+  //TODO Spam prevention and security measures to avoid overwhelming with emails
   const cards = [
     {
       id: 1,

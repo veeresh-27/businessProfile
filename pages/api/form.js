@@ -4,7 +4,7 @@ export default function handler(req, res) {
   if (req.method === "POST") {
     const data = req.body;
     console.log("body: ", data);
-    return res.status(200).json(data);
+    return res.status(200).json({ form: "Success" });
   }
   return res.status(500).json({
     msg: "This is needs to be post req",
