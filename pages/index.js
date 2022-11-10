@@ -9,17 +9,17 @@ import { Card } from "../components/card";
 export default function Home() {
   //TODO Spam prevention and security measures to avoid overwhelming with emails
 
-  const settings = {
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    infinite: true,
-    speed: 500,
-    arrows: false,
-    slidesToShow: 1,
-    //fade: true,
-    slidesToScroll: 1,
-  };
+  // const settings = {
+  //   dots: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 1500,
+  //   infinite: true,
+  //   speed: 500,
+  //   arrows: false,
+  //   slidesToShow: 1,
+  //   //fade: true,
+  //   slidesToScroll: 1,
+  // };
   const cards = [
     {
       id: 1,
