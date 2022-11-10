@@ -101,7 +101,7 @@ export default function Home() {
               src={
                 "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
               }
-              alt={"name"}
+              alt={"nam"}
               style={{
                 width: "100%",
                 height: "450px",
