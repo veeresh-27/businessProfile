@@ -3,9 +3,23 @@ import mutual from "../public/img/mutual_fund.png";
 import life from "../public/img/life-insurance.png";
 import cal from "../public/img/premium_calculator.png";
 import { Card } from "../components/card";
+import Slider from "react-slick";
+import Image from "next/image";
 
 export default function Home() {
   //TODO Spam prevention and security measures to avoid overwhelming with emails
+
+  const settings = {
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    infinite: true,
+    speed: 500,
+    arrows: false,
+    slidesToShow: 1,
+    //fade: true,
+    slidesToScroll: 1,
+  };
   const cards = [
     {
       id: 1,
@@ -29,6 +43,21 @@ export default function Home() {
       link: "/insurance",
     },
   ];
+
+  const carouselImages = [
+    {
+      img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      alt: "Carousel-img",
+    },
+    {
+      img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      alt: "Carousel-img",
+    },
+    {
+      img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      alt: "Carousel-img",
+    },
+  ];
   return (
     <div className="flex flex-col">
       <Head>
@@ -39,11 +68,67 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col justify-center w-full gap-4 py-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12">
-        <h1 className="flex self-center pt-5 text-xl font-bold text-center text-green-600 sm:text-xl md:text-2xl lg:text-4xl">
+      <div className="pt-4 relative opacity-40">
+        <Slider {...settings}>
+          <div className="">
+            <img
+              src={
+                "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              }
+              alt={"name"}
+              style={{
+                width: "100%",
+                height: "450px",
+                objectFit: "cover",
+              }}
+            />
+          </div>
+          <div className="">
+            <img
+              src={
+                "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              }
+              alt={"name"}
+              style={{
+                width: "100%",
+                height: "450px",
+                objectFit: "cover",
+              }}
+            />
+          </div>{" "}
+          <div className="">
+            <img
+              src={
+                "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              }
+              alt={"name"}
+              style={{
+                width: "100%",
+                height: "450px",
+                objectFit: "cover",
+              }}
+            />
+          </div>{" "}
+          <div className="">
+            <img
+              src={
+                "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              }
+              alt={"name"}
+              style={{
+                width: "100%",
+                height: "450px",
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        </Slider>
+      </div>
+      <div className="absolute flex flex-col justify-center w-full gap-4 py-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12 top-28">
+        <h1 className="flex self-center pt-5 text-xl font-bold text-center  sm:text-xl md:text-2xl lg:text-4xl">
           Experience Your Financial Journey Hassle-Free
         </h1>
-        <div className="text-xs text-center text-gray-400 font-sm md:text-md lg:text-xl ">
+        <div className="text-xs text-center text-gray-900 font-sm md:text-md lg:text-xl ">
           Financial Planning & Decisions For Life
           <br />
           Made Simple With Smart Technology
@@ -51,7 +136,7 @@ export default function Home() {
         <div className="flex justify-center">
           <button
             type="button"
-            className="px-6 py-2 border-2 border-green-600 text-green-600 font-medium text-l rounded hover:bg-green-600 hover:text-white transition-all ease-in-out duration-200"
+            className="px-6 py-2 border-2 border-green-600 text-white font-medium text-l rounded bg-green-600 hover:bg-green-800 hover:text-white transition-all ease-in-out duration-200"
           >
             Get Started
           </button>
