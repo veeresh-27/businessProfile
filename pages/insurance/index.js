@@ -127,14 +127,14 @@ export default function Insurance() {
       <h1 className="text-2xl text-green-600 text-center font-bold ">
         Life Insurance
       </h1>
-      <div className="flex font-medium justify-center gap-4 p-4">
+      <div className="flex font-medium justify-center md:justify-start pt-10 gap-8">
         {tabs?.map(({ name }, index) => (
           <>
             <div
               key={index}
-              className={`cursor-pointer px-2 py-2 rounded text-gray-600 border border-gray-300 transition-all ease-in-out duration-500 ${
+              className={`cursor-pointer rounded text-gray-600 border-b-4 transition-all ease-in-out duration-500 ${
                 active === index
-                  ? "bg-green-600 border-green-600 text-gray-200"
+                  ? "border-green-600 scale-110 text-black"
                   : null
               }`}
               onClick={() => setActive(index)}
@@ -145,7 +145,7 @@ export default function Insurance() {
         ))}
       </div>
       {active === 0 ? (
-        <div className="  py-5 bg-white-200  justify-center  ">
+        <div className="  py-2 bg-white-200  justify-center  ">
           <div className="py-4">
             <div>
               <h1 className="text-xl text-green-600  font-bold">

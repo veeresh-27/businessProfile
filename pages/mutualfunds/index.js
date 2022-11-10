@@ -61,13 +61,15 @@ export default function MutualFunds() {
     },
   ];
   return (
-    <>
-      <div className="flex gap-4 p-4">
+    <div className="px-4 md:px-14 lg:px-24">
+      <div className="flex pt-10 pb-6 gap-4">
         {tabs?.map(({ name }, index) => (
           <>
             <div
-              className={`cursor-pointer border-b-4 rounded ${
-                activeTab === index ? "border-green-600 scale-110" : null
+              className={`cursor-pointer  border-b-4 rounded text-gray-600 transition-all ease-in-out duration-500 ${
+                activeTab === index
+                  ? "border-green-600 scale-110 text-black "
+                  : null
               }`}
               key={index}
               onClick={() => setActiveTab(index)}
@@ -79,11 +81,11 @@ export default function MutualFunds() {
       </div>
       {activeTab === 0 ? (
         <>
-          <h1 className="text-2xl text-green-600 text-center font-bold">
-            Know Mutual Fund
-          </h1>
+          {/*<h1 className="text-2xl text-green-600  font-bold">*/}
+          {/*  Know Mutual Fund*/}
+          {/*</h1>*/}
           <div>
-            <p className=" text-md font-bold text-gray-500 my-9 ">
+            <p className=" text-md font-bold text-gray-500 mb-4 ">
               {" "}
               <span className="text-xl text-green-600 ">Mutual Funds</span>{" "}
               offer a way for a group of investors to effectively pool their
@@ -97,7 +99,7 @@ export default function MutualFunds() {
               passes along the profits (and losses) of those investments to its
               shareholders.
             </p>
-            <p className=" text-md font-base text-gray-600 mx-20 py-30">
+            <p className=" text-md font-base text-gray-600 py-30">
               More & more people are learning about mutual funds as a means of
               investment. From putting ones money into fixed deposits or
               investing in real estate, people are becoming aware of mutual
@@ -116,13 +118,13 @@ export default function MutualFunds() {
               Lets glance at why should one consider investing in mutual funds
               over other options to achieve their financial goals:
             </h3>
-            <div className="flex  my-5 gap-10 flex-wrap justify-center">
+            <div className="flex my-5 gap-6 flex-wrap justify-center">
               {mf.map(({ id, title, desc }) => (
                 <MutualFundCard key={id} title={title} desc={desc} />
               ))}
             </div>
           </div>
-          <div className="border px-20 my-5   ">
+          <div className=" my-5   ">
             <h1 className="text-xl text-green-600  my-4 font-bold">
               Types Of Mutual Funds
             </h1>
@@ -217,7 +219,7 @@ export default function MutualFunds() {
       ) : (
         <>
           {" "}
-          <div className=" px-20 my-5   ">
+          <div className="my-5">
             <h1 className="text-xl text-green-600  font-bold">What Is SIP?</h1>
             <p className="text-sm py-2">
               Systematic Investment Plan (SIP) is a very easy & convenient mode
@@ -236,8 +238,8 @@ export default function MutualFunds() {
             <h1 className="text-center  py-4 text-lg text-green-600  font-bold">
               Benefits Of SIP
             </h1>
-            <div className="flex-wrap my-5">
-              <div className=" box-border p-3 mx-3 bg-sky-400  rounded ">
+            <div className="flex flex-wrap justify-center gap-4 my-5">
+              <div className="border p-3 bg-sky-400 md:w-[48%]  rounded ">
                 <div className="text-center  ">
                   <h1>CONVENIENCE</h1>
                   <p>
@@ -247,7 +249,7 @@ export default function MutualFunds() {
                   </p>
                 </div>
               </div>
-              <div className="box-border  mt-4 p-3 mx-3 bg-red-400 rounded">
+              <div className="border p-3 md:w-[48%]  bg-red-400 rounded">
                 <div className="text-center ">
                   <h1>DISCIPLINED SAVING</h1>
                   <p>
@@ -259,7 +261,7 @@ export default function MutualFunds() {
                 </div>
               </div>
 
-              <div className="box-border mt-4  p-3 mx-3 bg-green-500  rounded">
+              <div className="border md:w-[48%]  p-3  bg-green-500  rounded">
                 <div className="text-center">
                   <h1>FLEXIBILITY</h1>
                   <p>
@@ -269,7 +271,7 @@ export default function MutualFunds() {
                   </p>
                 </div>
               </div>
-              <div className="box-border  mt-4  p-3 mx-3 bg-yellow-500    rounded">
+              <div className="border md:w-[48%] p-3 bg-yellow-500 rounded">
                 <div className="text-center">
                   <h1>LONG TERM GAINS</h1>
                   <p>
@@ -282,7 +284,7 @@ export default function MutualFunds() {
               </div>
             </div>
           </div>
-          <div className=" px-20 my-5   ">
+          <div className=" my-5">
             <h1 className="text-xl text-green-600  font-bold">
               Power Of Compounding
             </h1>
@@ -299,24 +301,24 @@ export default function MutualFunds() {
                     from the power of compounding. Let’s explore this concept
                     further.
                   </div>
-                  <div className=" px-20 my-3 grid grid-cols-2 gap-3 md:h-full  text-md font-bold text-white ">
-                    <div className="border-2 px-2 py-4 w-50 rounded   bg-sky-400">
+                  <div className=" flex flex-wrap my-3 gap-3 text-md   ">
+                    <div className=" border-2 md:w-[48%] px-2 py-4 rounded   bg-sky-400">
                       <p>
                         Compounding basically is long term investment strategy
                         which means to re-invest ones earnings from interest or
                         dividend for receiving additional units
                       </p>
                     </div>
-                    <div className="border-2  px-2  py-4 w-50 rounded bg-purple-400">
+                    <div className=" border-2 md:w-[48%] px-2  py-4 rounded bg-purple-400">
                       The benefit from compounding comes primarily from the fact
                       that income keeps growing the principal to generate higher
                       returns as time progresses
                     </div>
-                    <div className="border-2  px-2 py-4 w-50 rounded bg-red-400">
+                    <div className=" border-2  px-2 py-4 md:w-[48%] rounded bg-red-400">
                       Higher rate of returns or longer investment duration plays
                       a key role that leads to increase in principal amount
                     </div>
-                    <div className="border-2  px-2 py-4 w-50  rounded bg-yellow-400">
+                    <div className="border-2  px-2 py-4 md:w-[48%] rounded bg-yellow-400 text-gray-600">
                       Hence, we can say that a successful investment planning is
                       all about making the most of compounding by getting time
                       on one’s side. Hence the earlier you start investing, the
@@ -334,7 +336,7 @@ export default function MutualFunds() {
         div className="flex p-4">
           <VerticalTabs displayTabs={tabs} />
         </div>*/}
-    </>
+    </div>
   );
 }
 
