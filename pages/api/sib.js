@@ -3,16 +3,16 @@ require("dotenv").config();
 export default function handler(req, res) {
   SibApiV3Sdk.ApiClient.instance.authentications["api-key"].apiKey =
     process.env.SENDINBLUE_API;
-  const { email } = req.body;
+  const { email, name } = req.body;
   new SibApiV3Sdk.TransactionalEmailsApi()
     .sendTransacEmail({
-      subject: "Hello from the Node SDK!",
-      sender: { email: "veereshrm789@gmail.com", name: "Ishwar Patil" },
+      subject: "Thank you for contacting Ishwar Patil",
+      sender: { email: "veereshrm789@gma.com", name: "Ishwar Patil" },
       replyTo: { email: "veereshrm789@gmail.com", name: "Ishwar Patil" },
-      to: [{ name: "John Doe", email: `${email}` }],
+      to: [{ name: `${name}`, email: `${email}` }],
       htmlContent:
-        "<html><body><h1>This is a transactional email {{params.bodyMessage}}</h1></body></html>",
-      params: { bodyMessage: "Made just for you!" },
+        "<html><body><h1>Thank you for getting in touch. We will shortly get back to you {{params.bodyMessage}}</h1></body></html>",
+      params: { bodyMessage: "" },
     })
     .then(
       function (data) {
