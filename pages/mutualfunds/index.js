@@ -83,7 +83,7 @@ export default function MutualFunds() {
             Know Mutual Fund
           </h1>
           <div>
-            <p className=" text-md font-bold text-gray-500 my-9  px-20">
+            <p className=" text-md font-bold text-gray-500 my-9 ">
               {" "}
               <span className="text-xl text-green-600 ">Mutual Funds</span>{" "}
               offer a way for a group of investors to effectively pool their
@@ -108,7 +108,7 @@ export default function MutualFunds() {
               need to know about mutual funds & the benefits it carries.
             </p>
           </div>
-          <div className="border px-20 my-5   ">
+          <div className="my-5   ">
             <h1 className="text-xl text-green-600  my-4 font-bold ">
               Why To Invest In Mutual Funds?
             </h1>

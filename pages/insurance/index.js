@@ -122,17 +122,17 @@ export default function Insurance() {
   ];
 
   return (
-    <>
+    <div className=" px-4 md:px-14 lg:px-24">
       {" "}
-      <h1 className="text-2xl text-green-600 text-center font-bold">
+      <h1 className="text-2xl text-green-600 text-center font-bold ">
         Life Insurance
       </h1>
-      <div className="flex gap-4 p-4">
+      <div className="flex font-medium justify-center gap-4 p-4">
         {tabs?.map(({ name }, index) => (
           <>
             <div
               key={index}
-              className={`cursor-pointer px-4 py-2 rounded text-gray-600 border border-gray-300 transition-all ease-in-out duration-500 ${
+              className={`cursor-pointer px-2 py-2 rounded text-gray-600 border border-gray-300 transition-all ease-in-out duration-500 ${
                 active === index
                   ? "bg-green-600 border-green-600 text-gray-200"
                   : null
@@ -145,8 +145,8 @@ export default function Insurance() {
         ))}
       </div>
       {active === 0 ? (
-        <div className="border mt-10  bg-white-200  justify-center   ">
-          <div className="mx-9 p-4 ">
+        <div className="  py-5 bg-white-200  justify-center  ">
+          <div className="py-4">
             <div>
               <h1 className="text-xl text-green-600  font-bold">
                 Why Life Insurance
@@ -233,27 +233,30 @@ export default function Insurance() {
           </div>
         </div>
       ) : (
-        <div className="border mt-10  bg-white-200  justify-center">
+        <div className=" bg-white-200  justify-center ">
           {" "}
-          <div className="mx-9 p-4 mt-10 ">
+          <div className="py-5 ">
             <h1 className=" text-xl font-bold text-green-600">
               Health Insurance
             </h1>
+            <div className="my-3">
+              {" "}
+              <h3 className="text-normal font-bold text-green-600">
+                Why A Health Plan?
+              </h3>
+              <p className="text-md font-base text-gray-500 ">
+                In todays fast paced lives that we live and in a race to excel
+                in everything, we forget one of the most important asset we own
+                i.e. our health. Due to various habits & changing lifestyles,
+                health related concerns have just become increasingly alarming.
+                We may not be to go back to slow down the pace of our lives but
+                can definitely guard ourselves from its side effect. Here when
+                an efficient health cover comes handy so that any sudden illness
+                doesnt derail our financial freedom.
+              </p>
+            </div>
 
-            <h3 className="text-normal font-bold text-green-600">
-              Why A Health Plan?
-            </h3>
-            <p className="text-md font-base text-gray-500 my-3">
-              In todays fast paced lives that we live and in a race to excel in
-              everything, we forget one of the most important asset we own i.e.
-              our health. Due to various habits & changing lifestyles, health
-              related concerns have just become increasingly alarming. We may
-              not be to go back to slow down the pace of our lives but can
-              definitely guard ourselves from its side effect. Here when an
-              efficient health cover comes handy so that any sudden illness
-              doesnt derail our financial freedom.
-            </p>
-            <p className="text-md font-base text-gray-500 my-3">
+            <p className="text-md font-base text-gray-500 ">
               Medical assistance comes with a price tag, such that people are
               forced to sell of their assets or rely on borrowers to meet the
               expenses. Such unforeseen events can be easily dealt with a strong
@@ -262,7 +265,7 @@ export default function Insurance() {
               health cover as per your requirements.
             </p>
           </div>
-          <div className="mx-9 p-4 mt-10 ">
+          <div className="p-4 ">
             <h1 className=" text-xl font-bold text-green-600">
               Personal Accident
             </h1>
@@ -292,7 +295,7 @@ export default function Insurance() {
             <div className=" flex align-center justify-center">
               <Image src={personal} alt="" className="md:px-30" />
             </div>
-            <div className="mt-10">
+            <div className="py-4">
               <h1 className="text-md font-medium text-green-600 my-3">
                 Advantages of Personal Accident Policy:
               </h1>
@@ -321,7 +324,7 @@ export default function Insurance() {
               {/*</div>*/}
               <ul
                 role="list"
-                className=" mx-20 marker:text-green-600 list-disc pl-5 space-y-3 text-slate-400"
+                className="  marker:text-green-600 list-disc pl-5 space-y-3 text-slate-400"
               >
                 <li>Substantial coverage offered with low premium</li>
                 <li>
@@ -343,12 +346,13 @@ export default function Insurance() {
               <Image src={all} alt="" />
             </div>
           </div>
-          <div className="mt-6 mx-9 px-7">
+          <div className="py-4 flex flex-col px-3">
             <h1 className="text-xl text-green-600  font-bold">
               What does the policy cover?
             </h1>
+
             <div className="mt-4">
-              <h2 className="text-md text-green-600 font-medium my-2 ">
+              <h2 className="text-md text-green-600 font-medium ">
                 Accidental Death
               </h2>
               <p className=" text-md font-base text-gray-600 ">
@@ -360,7 +364,7 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               {" "}
-              <h2 className="text-md text-green-600 font-medium my-2">
+              <h2 className="text-md text-green-600 font-medium ">
                 Permanent or Total Disability
               </h2>
               <p className=" text-md font-base text-gray-600 ">
@@ -370,7 +374,7 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               {" "}
-              <h2 className="text-md text-green-600 font-medium my-2">
+              <h2 className="text-md text-green-600 font-medium ">
                 Permanent or Total Disability
               </h2>
               <p className=" text-md font-base text-gray-600 ">
@@ -380,7 +384,7 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               {" "}
-              <h2 className="text-md text-green-600 font-medium my-2">
+              <h2 className="text-md text-green-600 font-medium ">
                 Accidental Dismemberment
               </h2>
               <p className=" text-md font-base text-gray-600 ">
@@ -390,7 +394,7 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               {" "}
-              <h2 className="text-md text-green-600 font-medium my-2">
+              <h2 className="text-md text-green-600 font-medium">
                 Additional Benefits
               </h2>
               <p className=" text-md font-base text-gray-600">
@@ -400,7 +404,7 @@ export default function Insurance() {
               </p>
             </div>
             <div className="mt-4">
-              <h2 className="text-md text-green-600 font-medium my-2">
+              <h2 className="text-md text-green-600 font-medium ">
                 Daily Hospitalization Expenses
               </h2>
               <p className=" text-md font-base text-gray-600 ">
@@ -410,7 +414,7 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               {" "}
-              <h2 className="text-md text-green-600 font-medium my-2">Burns</h2>
+              <h2 className="text-md text-green-600 font-medium">Burns</h2>
               <p className=" text-md font-base text-gray-600 ">
                 A certain amount of the policy sum is payable, when an accident
                 results in hospitalization & the victim is being treated for
@@ -419,9 +423,7 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               {" "}
-              <h2 className="text-md text-green-600 font-medium  my-2">
-                Bonuses
-              </h2>
+              <h2 className="text-md text-green-600 font-medium  ">Bonuses</h2>
               <p className=" text-md font-base text-gray-600 ">
                 Some policies may offer bonuses to the dependent kids of the
                 policyholder. This becomes helpful in case of the death of the
@@ -431,6 +433,6 @@ export default function Insurance() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
