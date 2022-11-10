@@ -3,7 +3,7 @@ import mutual from "../public/img/mutual_fund.png";
 import life from "../public/img/life-insurance.png";
 import cal from "../public/img/premium_calculator.png";
 import { Card } from "../components/card";
-import Slider from "react-slick";
+//import Slider from "react-slick";
 //import Image from "next/image";
 
 export default function Home() {
@@ -69,60 +69,60 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="pt-4 relative opacity-40">
-        <Slider {...settings}>
-          <div className="">
-            <img
-              src={
-                "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              }
-              alt={"name"}
-              style={{
-                width: "100%",
-                height: "450px",
-                objectFit: "cover",
-              }}
-            />
-          </div>
-          <div className="">
-            <img
-              src={
-                "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              }
-              alt={"name"}
-              style={{
-                width: "100%",
-                height: "450px",
-                objectFit: "cover",
-              }}
-            />
-          </div>{" "}
-          <div className="">
-            <img
-              src={
-                "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              }
-              alt={"nam"}
-              style={{
-                width: "100%",
-                height: "450px",
-                objectFit: "cover",
-              }}
-            />
-          </div>{" "}
-          <div className="">
-            <img
-              src={
-                "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"
-              }
-              alt={"name"}
-              style={{
-                width: "100%",
-                height: "450px",
-                objectFit: "cover",
-              }}
-            />
-          </div>
-        </Slider>
+        {/*<Slider {...settings}>*/}
+        {/*  <div className="">*/}
+        {/*    <img*/}
+        {/*      src={*/}
+        {/*        "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"*/}
+        {/*      }*/}
+        {/*      alt={"name"}*/}
+        {/*      style={{*/}
+        {/*        width: "100%",*/}
+        {/*        height: "450px",*/}
+        {/*        objectFit: "cover",*/}
+        {/*      }}*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*  <div className="">*/}
+        {/*    <img*/}
+        {/*      src={*/}
+        {/*        "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"*/}
+        {/*      }*/}
+        {/*      alt={"name"}*/}
+        {/*      style={{*/}
+        {/*        width: "100%",*/}
+        {/*        height: "450px",*/}
+        {/*        objectFit: "cover",*/}
+        {/*      }}*/}
+        {/*    />*/}
+        {/*  </div>{" "}*/}
+        {/*  <div className="">*/}
+        {/*    <img*/}
+        {/*      src={*/}
+        {/*        "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"*/}
+        {/*      }*/}
+        {/*      alt={"nam"}*/}
+        {/*      style={{*/}
+        {/*        width: "100%",*/}
+        {/*        height: "450px",*/}
+        {/*        objectFit: "cover",*/}
+        {/*      }}*/}
+        {/*    />*/}
+        {/*  </div>{" "}*/}
+        {/*  <div className="">*/}
+        {/*    <img*/}
+        {/*      src={*/}
+        {/*        "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"*/}
+        {/*      }*/}
+        {/*      alt={"name"}*/}
+        {/*      style={{*/}
+        {/*        width: "100%",*/}
+        {/*        height: "450px",*/}
+        {/*        objectFit: "cover",*/}
+        {/*      }}*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*</Slider>*/}
       </div>
       <div className="absolute flex flex-col justify-center w-full gap-4 py-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12 top-28">
         <h1 className="flex self-center pt-5 text-xl font-bold text-center  sm:text-xl md:text-2xl lg:text-4xl">
