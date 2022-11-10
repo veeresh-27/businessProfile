@@ -26,6 +26,12 @@ export const Links = ({ isOnMobile = false, setMobNav }) => {
       link: "/mutualfunds",
     },
     {
+      name: <>Homeloan</>,
+
+      title: "Get home loan",
+      link: "/homeloans",
+    },
+    {
       name: "Contact-Us",
       link: "/contact",
       style:

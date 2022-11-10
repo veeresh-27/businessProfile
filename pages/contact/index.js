@@ -88,12 +88,6 @@ export default function Contact() {
                   alt=""
                 />
               </div>
-              <div className="mb-8 flex w-full max-w-[370px]">
-                <div className="bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]"></div>
-              </div>
-              <div className="mb-8 flex w-full max-w-[370px]">
-                <div className="bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]"></div>
-              </div>
             </div>
           </div>
           <div className="w-full px-5 lg:w-1/2 xl:w-5/12">
