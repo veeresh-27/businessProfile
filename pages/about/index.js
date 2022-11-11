@@ -2,7 +2,7 @@ import Image from "next/image";
 //import about from "../../public/img/about.png";
 import { IconPhone } from "../../public/icons/iconsPhone";
 import { IconsMail } from "../../public/icons/iconsMail";
-import finplan from "../../public/img/financial-planning.webp";
+//import finplan from "../../public/img/financial-planning.webp";
 import { useRouter } from "next/router";
 
 export default function About() {
