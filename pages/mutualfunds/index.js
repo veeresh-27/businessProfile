@@ -44,7 +44,7 @@ const mf = [
   {
     id: 6,
     title: "Safe & Transparent",
-    desc: "Since every mutual fund is managed & regulated by SEBI, you need not worry as your investments are safe. SEBI has several regulations & legal frameworks in place which ensures that your investments are managed in a disciplined manner. Now it's true that every investment is subject to certain risks, however, prudent selection based on strong market knowledge &  fundamentally sound securities with diversification can help hedge such risks and generate high returns on your investments",
+    desc: "Since every mutual fund is managed & regulated by SEBI, you need not worry as your investments are safe. SEBI has several regulations & legal frameworks in place which ensures that your investments are managed in a disciplined manner and generate high returns on your investments.",
   },
 ];
 
