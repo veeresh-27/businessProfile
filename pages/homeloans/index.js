@@ -43,29 +43,34 @@ export default function Homeloans() {
       </div>
 
       <div className="p-4 md:p-14 lg:p-20">
-        <h1 className="text-xl py-3 text-green-600">
-          “Helping you make important decisions”
-        </h1>
-        <p className="text-gray-500">
-          As a Home Loan Service Provider Team Bharat Parekh is dedicated to
-          helping you to make the right decisions in choosing a home loan for
-          purchasing your dream home, for what may be “the biggest financial
-          decision of your life”.
-        </p>
-        <p className="py-3 text-gray-500">
-          We are committed to provide best services to enable you to purchase or
-          finance your property.
-        </p>
-        <p className="py-3 text-gray-500">
-          We have the expertise in the field of Life Insurance, Housing Finance,
-          Health insurance, Mutual Funds and Financial Services Industries with
-          a focus on providing exceptional and delightful customer services.
-        </p>
-        <p className="py-3 text-gray-500">
-          We believe that by assisting our clients to manage and structure their
-          Insurance debt and Home equity, we can help them to reach financial
-          goals sooner with better security.
-        </p>
+        <div className="flex flex-col gap-4">
+          {" "}
+          <h1 className="text-xl  text-green-600">
+            “The perfect home starts with the right mortgage”
+          </h1>
+          <p className="text-gray-500">
+            A home could give one a sense of security, comfort and an
+            accomplishment. But buying a home entails huge expenses and a
+            long-term financial commitment. It is, hence, important to
+            understand what works best for you — choosing to buy a home or rent
+            one.
+          </p>
+          <p className=" text-gray-500">
+            We are committed to provide best services to enable you to purchase
+            or finance your property.
+          </p>
+          <p className=" text-gray-500">
+            We have the expertise in the field of Life Insurance, Housing
+            Finance, Health insurance, Mutual Funds and Financial Services
+            Industries with a focus on providing exceptional and delightful
+            customer services.
+          </p>
+          <p className="py-3 text-gray-500">
+            We believe that by assisting our clients to manage and structure
+            their Insurance debt and Home equity, we can help them to reach
+            financial goals sooner with better security.
+          </p>
+        </div>
         <h1 className="text-2xl text-green-600 text-center font-bold">
           Our Services
         </h1>
@@ -76,7 +81,7 @@ export default function Homeloans() {
                 01
               </span>
               <h1 className="text-green-600 font-bold text-lg">
-                Expert Dedicated team
+                Deep Analysis
               </h1>
             </div>
             <div className="flex flex-wrap my-5 gap-10">
@@ -92,7 +97,7 @@ export default function Homeloans() {
                 03
               </span>
               <h1 className="text-green-600 font-bold text-lg">
-                Services at your Doorstep
+                Tax Management
               </h1>
             </div>
             <div className="flex flex-wrap my-5 gap-10">
@@ -108,7 +113,7 @@ export default function Homeloans() {
               <h1 className="text-green-600 font-bold text-lg">Follow ups</h1>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex  justify-center">
             <Image src={homeImage} alt={"Home"} />
           </div>
         </div>

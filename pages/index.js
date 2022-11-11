@@ -106,7 +106,7 @@ export default function Home() {
           <h3 className="text-2xl text-green-600  font-medium my-5">
             {" "}
             {/*Know more about our FINANCIAL SERVICES*/}
-            Stop Procrastinating Start Financial Planning
+            Stop Procrastinating & Start Financial Planning
           </h3>
           <h4 className="text-base text-gray-400 ">
             We are here to understand your needs and help you achieve your goals
