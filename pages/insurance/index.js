@@ -227,24 +227,23 @@ export default function Insurance() {
                 Why A Health Plan?
               </h3>
               <p className="text-md font-base text-gray-500 ">
-                In todays fast paced lives that we live and in a race to excel
-                in everything, we forget one of the most important asset we own
-                i.e. our health. Due to various habits & changing lifestyles,
-                health related concerns have just become increasingly alarming.
-                We may not be to go back to slow down the pace of our lives but
-                can definitely guard ourselves from its side effect. Here when
-                an efficient health cover comes handy so that any sudden illness
-                doesnt derail our financial freedom.
+                It’s important to have health insurance as a safety net. If you
+                unexpectedly get sick or injured, health insurance is there to
+                help cover costs that you likely can’t afford to pay on your
+                own.
               </p>
             </div>
 
             <p className="text-md font-base text-gray-500 ">
-              Medical assistance comes with a price tag, such that people are
-              forced to sell of their assets or rely on borrowers to meet the
-              expenses. Such unforeseen events can be easily dealt with a strong
-              health insurance plans. So guard your finances by opting for
-              complete protection for you & your family by getting adequate
-              health cover as per your requirements.
+              Health care can be very expensive. It can be an enormous financial
+              burden. Surgery, emergency care, prescription drugs, lab work,
+              scans and examinations – these sorts of costs can add up very
+              quickly. They can even be high enough to cause individuals to go
+              bankrupt, or to turn down care that they need but can’t afford
+              out-of-pocket. But, with health insurance, you’re not facing those
+              costs as an individual; there’s an insurance plan helping you
+              cover the costs, and helping you navigate the confusion of medical
+              billing.
             </p>
           </div>
           <div className="p-4 ">
@@ -259,20 +258,23 @@ export default function Insurance() {
               Why Personal Accident Insurance?
             </h2>
             <p className="text-md font-base text-gray-500 my-3">
-              Life is uncertain & immeasurable. Accidents & uneventful incidents
-              never ring a warning bell before they strike. Road mishaps,
-              accidents have gone up tremendously & the victims along with their
-              families suffer the consequences of the such unfortunate
-              situation. Alarming statistics report about 1214 road related
-              death that occur in India every year; this should be an eye opener
-              on the perils an individual is exposed daily.
+              An accident can occur at any time without any warning, and
+              sometimes it can cause serious harm. Any such untoward incident
+              can have a significant impact on your finances; not only can the
+              treatment be expensive, but if you suffer from any form of
+              disability, it can affect your earning potential. To protect
+              yourself and your family from such a situation, it is paramount
+              that you purchase a personal accident insurance policy.
             </p>
             <p className="text-md font-base text-gray-500 my-3">
-              While minor accidents can cause temporary hurdles, major ones can
-              lead to disability for life or even demise. With a view to
-              providing certain relief, insurance companies have devised various
-              policies that serve as true life savers when met with an
-              unfortunate circumstance.
+              Personal accident insurance is useful to get the financial
+              assistance to you and your family in the event of an accident that
+              leads to death, bodily injuries, temporary total disability,
+              permanent total disability and permanent partial disability. In
+              the event of death, the insurance company will pay 100%
+              compensation (equal to the sum assured) to the appointed nominee.
+              Also, the insurance companies offer compensation for an accident
+              disability such as loss of speech, limbs and eyes.
             </p>
             <div className=" flex align-center justify-center">
               <Image src={personal} alt="" className="md:px-30" />
@@ -282,44 +284,53 @@ export default function Insurance() {
                 Advantages of Personal Accident Policy:
               </h1>
               <p className="text-md font-base text-gray-500 my-3">
-                Give yourself a minute to think about what will happen to your
-                dependents if you were disabled because of an accident? There
-                will be no monthly income, no cash inflows but expenses will
-                continue to rise. In such case, an accident insurance policy
-                will help you bring these expenses under control.
+                A lot of people ignore buying accident insurance, mainly because
+                they don’t understand the importance of the cover. But, you must
+                think about the safety and security of your family and how can
+                they sustain themselves financially if something untoward
+                happens to you. If you get involved in an accident that leads to
+                death or disability, it would have an impact on your income. If
+                you have any liability like home loan, it would be difficult for
+                the family members to meet the expenses. Besides, you must also
+                take care of the treatment cost. To avoid putting your family in
+                such a financially distressed situation, you must invest in the
+                best accident insurance.
               </p>
-              <p className="text-md font-normal text-green-600 my-3">
-                Additional advantages are:
+              <p className="text-md font-bold text-green-600 my-3">
+                Types of Personal Accident Insurance
               </p>
-              {/*<div className="mx-20   text-md font-base text-gray-500 ">*/}
-              {/*  <p>Substantial coverage offered with low premium.</p>*/}
-              {/*  <p>*/}
-              {/*    Double indemnity for disability for mishaps occurred while*/}
-              {/*    traveling in public transport.*/}
-              {/*  </p>*/}
-              {/*  <p>Easy claim process.</p>*/}
-              {/*  <p>Highly customized plan available.</p>*/}
-              {/*  <p>World wide coverage.</p>*/}
-              {/*  <p>Can be bought for individual & family.</p>*/}
-              {/*  <p>Child education advantage.</p>*/}
-              {/*  <p>No requirement of medical tests & documentation.</p>*/}
-              {/*</div>*/}
+              <p className="text-md font-bold text-gray-400 my-2">
+                The personal accident insurance can be broadly classified into
+                two categories – Group Accident Insurance and Individual
+                Accident Insurance.
+              </p>
+
               <ul
                 role="list"
-                className="  marker:text-green-600 list-disc pl-5 space-y-3 text-slate-400"
+                className=" marker:text-green-600 list-disc pl-5 text-slate-400"
               >
-                <li>Substantial coverage offered with low premium</li>
-                <li>
-                  {" "}
-                  Double indemnity for disability for mishaps occurred while
-                  traveling in public transport.
+                <li className="font-bold">
+                  Group Personal Accident Insurance{" "}
                 </li>
-                <li>Easy claim process</li>
-                <li>Highly customized plan available</li>
-                <li>World wide coverage</li>
-                <li>Can be bought for individual & family</li>
-                <li>Child education advantage</li>
-                <li>No requirement of medical tests & documentation</li>
+                <p>
+                  Typically, the business owners and employers buy group
+                  personal accident insurance to cover their employees.
+                  Depending on the size of the organisation, and the number of
+                  employees, the insurance companies offer a discount on the
+                  premium. A group personal accident policy is an excellent
+                  incentive for the employees as it assures them financial
+                  safety in the event of any mishap at the workplace.
+                </p>
+                <li className="font-bold">
+                  {" "}
+                  Individual Personal Accident Insurance
+                </li>
+                <p>
+                  As the name suggests, it is taken by an individual and it
+                  guards the policyholders against the accidental damages. It
+                  usually covers accidental death, loss of body parts and other
+                  disabilities resulting from an accident.
+                </p>
               </ul>
             </div>
           </div>
