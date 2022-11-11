@@ -5,6 +5,7 @@ import health from "../public/img/health.jpg";
 import home from "../public/img/Home_.jpg";
 import { Card } from "../components/card";
 import Carousel from "../components/carousel";
+import { useRouter } from "next/router";
 //import Slider from "react-slick";
 //import Image from "next/image";
 
@@ -22,6 +23,7 @@ export default function Home() {
   //   //fade: true,
   //   slidesToScroll: 1,
   // };
+  const router = useRouter();
   const cards = [
     {
       id: 1,
@@ -93,6 +95,7 @@ export default function Home() {
           <button
             type="button"
             className="px-6 py-2 border-2 border-green-600 text-white font-medium text-l rounded bg-green-600 hover:bg-green-700 hover:text-white transition-all ease-in-out duration-200"
+            onClick={() => router.push("/contact")}
           >
             Get Started
           </button>

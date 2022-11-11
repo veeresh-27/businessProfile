@@ -1,17 +1,47 @@
-import icon from "../../public/img/home_icon.jpg";
+//import icon from "../../public/img/home_icon.jpg";
+import Carousel from "../../components/carousel";
+import { useRouter } from "next/router";
+import homeImage from "../../public/img/home.jpg";
 import Image from "next/image";
 export default function Homeloans() {
+  const router = useRouter();
+  const carouselImages = [
+    {
+      img: "https://www.japtza.co.tz/img/carousel-1.jpg",
+    },
+    {
+      img: "https://www.outlookindia.com/outlookmoney/public/uploads/article/gallery/74cf59a3b47090a860d701b4cd89ab2f.jpg",
+    },
+    {
+      img: "https://navi.com/blog/wp-content/uploads/2022/02/home-loan-in-dharwad-1.jpg",
+    },
+  ];
   return (
     <>
-      <div className="flex align-center justify-center ">
-        <h1 className="text-2xl text-green-600 text-center  font-bold">
-          Home Loan{" "}
-          <span className="">
-            {" "}
-            <Image src={icon} alt="" className="w-32 mx-9" />{" "}
-          </span>
-        </h1>
+      <div className="pt-4 relative opacity-60">
+        <Carousel caruselImages={carouselImages} />
       </div>
+      <div className="absolute flex flex-col justify-center w-full gap-4 py-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12 top-28">
+        <h1 className="flex self-center pt-5 text-xl font-bold text-center  sm:text-xl md:text-2xl lg:text-4xl">
+          Home Loans
+        </h1>
+        <div className="text-xs text-center text-gray-900 font-sm md:text-md lg:text-xl ">
+          Attractive interest rates to make your Home Loans affordable and
+          easier on your pocket.
+          <br />
+          Customized repayment options to suit your needs.
+        </div>
+        <div className="flex justify-center">
+          <button
+            type="button"
+            className="px-6 py-2 border-2 border-green-600 text-white font-medium text-l rounded bg-green-600 hover:bg-green-700 hover:text-white transition-all ease-in-out duration-200"
+            onClick={() => router.push("/contact")}
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+
       <div className="p-4 md:p-14 lg:p-20">
         <h1 className="text-xl py-3 text-green-600">
           “Helping you make important decisions”
@@ -36,49 +66,50 @@ export default function Homeloans() {
           Insurance debt and Home equity, we can help them to reach financial
           goals sooner with better security.
         </p>
-
-        <div>
-          <h1 className="text-2xl text-green-600 text-center font-bold">
-            Our Services
-          </h1>
-          <div className="flex flex-wrap my-5 gap-10">
-            <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-yellow-400 ">
-              01
-            </span>
-            <h1 className="text-green-600 font-bold text-lg">
-              Expert Dedicated team
-            </h1>
+        <h1 className="text-2xl text-green-600 text-center font-bold">
+          Our Services
+        </h1>
+        <div className="flex justify-between flex-wrap-reverse">
+          <div>
+            <div className="flex flex-wrap my-5 gap-10">
+              <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-yellow-400 ">
+                01
+              </span>
+              <h1 className="text-green-600 font-bold text-lg">
+                Expert Dedicated team
+              </h1>
+            </div>
+            <div className="flex flex-wrap my-5 gap-10">
+              <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-black ">
+                02
+              </span>
+              <h1 className="text-green-600 font-bold text-lg">
+                Personalized Services
+              </h1>
+            </div>
+            <div className="flex flex-wrap my-5 gap-10">
+              <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-orange-400 ">
+                03
+              </span>
+              <h1 className="text-green-600 font-bold text-lg">
+                Services at your Doorstep
+              </h1>
+            </div>
+            <div className="flex flex-wrap my-5 gap-10">
+              <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-pink-400 ">
+                04
+              </span>
+              <h1 className="text-green-600 font-bold text-lg">Legal Advice</h1>
+            </div>
+            <div className="flex flex-wrap my-5 gap-10">
+              <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-rose-400 ">
+                05
+              </span>
+              <h1 className="text-green-600 font-bold text-lg">Follow ups</h1>
+            </div>
           </div>
-          <div className="flex flex-wrap my-5 gap-10">
-            <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-black ">
-              02
-            </span>
-            <h1 className="text-green-600 font-bold text-lg">
-              Personalized Services
-            </h1>
-          </div>
-          <div className="flex flex-wrap my-5 gap-10">
-            <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-orange-400 ">
-              03
-            </span>
-            <h1 className="text-green-600 font-bold text-lg">
-              Services at your Doorstep
-            </h1>
-          </div>
-          <div className="flex flex-wrap my-5 gap-10">
-            <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-pink-400 ">
-              04
-            </span>
-            <h1 className="text-green-600 font-bold text-lg">Legal Advice</h1>
-          </div>
-          <div className="flex flex-wrap my-5 gap-10">
-            <span className="text-white px-5 py-5 font-bold text-2xl border rounded-full bg-rose-400 ">
-              05
-            </span>
-            <h1 className="text-green-600 font-bold text-lg">
-              Grievance Handling, Review of Home Loan Portfolio from time to
-              time
-            </h1>
+          <div className="flex justify-center">
+            <Image src={homeImage} alt={"Home"} />
           </div>
         </div>
         <div className="py-5">
@@ -171,7 +202,9 @@ export default function Homeloans() {
           </div>
         </div>
         <div>
-          <h1>How we help you to Refinance/Balance Transfer.</h1>
+          <h1 className="text-green-600 font-medium text-md">
+            How we help you to Refinance/Balance Transfer.
+          </h1>
           <ul
             role="list"
             className="  marker:text-green-600 list-disc pl-5 space-y-3 text-slate-400"
