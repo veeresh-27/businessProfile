@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import topImage from "../../public/img/mutual-fund.webp";
 // import {
 //   Accordion,
 //   AccordionHeader,
@@ -87,30 +88,32 @@ export default function MutualFunds() {
       {activeTab === 0 ? (
         <>
           <div>
-            <p className=" text-md font-bold text-gray-500 mb-4 py-4  ">
-              {" "}
-              <span className="text-xl text-green-600 ">Mutual Funds</span>{" "}
-              offer a way for a group of investors to effectively pool their
-              money so they can invest in a wider variety of investment vehicles
-              and take advantage of professional money management through the
-              purchase of one mutual fund share. Mutual fund companies
-              essentially collect the money from their investors, or
-              shareholders, and invest that pooled money into individual
-              investment vehicles according to some risk profile, money
-              management philosophy, or financial goal. The mutual fund then
-              passes along the profits (and losses) of those investments to its
-              shareholders.
-            </p>
-            <div className="flex">
-              <div className="flex">
-                <Image
-                  src={dollor}
-                  alt={""}
-                  className="w-90 sm:w-full md:w-full"
-                />
+            <div className="flex gap-4 items-center flex-col-reverse md:flex-row pt-10 md:pt-0">
+              <div className="flex md:basis-3/5 md:pr-6">
+                <p className=" text-md font-bold text-gray-500 mb-4 py-4  ">
+                  {" "}
+                  <span className="text-xl text-green-600 ">
+                    Mutual Funds
+                  </span>{" "}
+                  offer a way for a group of investors to effectively pool their
+                  money so they can invest in a wider variety of investment
+                  vehicles and take advantage of professional money management
+                  through the purchase of one mutual fund share. Mutual fund
+                  companies essentially collect the money from their investors,
+                  or shareholders, and invest that pooled money into individual
+                  investment vehicles according to some risk profile, money
+                  management philosophy, or financial goal. The mutual fund then
+                  passes along the profits (and losses) of those investments to
+                  its shareholders.
+                </p>
               </div>
+              <div className="flex  w-[400px]">
+                <Image src={topImage} alt={""} />
+              </div>{" "}
+            </div>
 
-              <div className="px-5 py-[90px]">
+            <div className="flex">
+              <div className="">
                 <p className="text-md font-base text-gray-600 ">
                   More & more people are learning about mutual funds as a means
                   of investment. From putting ones money into fixed deposits or
