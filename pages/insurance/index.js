@@ -22,101 +22,86 @@ export default function Insurance() {
   const insurancePlans = [
     {
       id: 1,
-      title: "Term Life Insurance",
+      title: "Tax Benefit Plan",
       lines: [
-        "The most affordable form of life insurance, premiums of plan\n" +
-          "                under this category are cheap compared to other life insurance\n" +
-          "                products.",
-        "In the event of an unfortunate demise during the policy term,\n" +
-          "                Nominees will receive the ‘Sum Assured’.",
+        "Tax saving investments are central to financial planning and growth as they offer tax saving under Section 80C and 80CCC of the Income Tax Act of India – while also acting as a backup plan for unexpected expenses and emergencies.",
       ],
     },
     {
       id: 2,
-      title: "Whole Life Policy",
+      title: "Lifetime Income & Protection Plam",
       lines: [
-        "The most affordable form of life insurance, premiums of plan\n" +
-          "                under this category are cheap compared to other life insurance\n" +
-          "                products.",
-        "In the event of an unfortunate demise during the policy term,\n" +
-          "                Nominees will receive the ‘Sum Assured’.",
+        " Retirement years are surely the golden phase of life and anyone would wish to do\n" +
+          "\n" +
+          "all those things,which they had been planning for long or had not given it much of a thought or priority. \n" +
+          " Retirement is the golden phase where in you would want to everything and not worry about the financial expenses.",
       ],
     },
     {
       id: 3,
-      title: "Endowment Plan",
+      title: "Child Higher Education Plan",
       lines: [
-        "The main difference that Endowment Plans offer from term plans\n" +
-          "                is the Maturity Benefit.",
-        "This type of plan pays out sum assured along with profits under\n" +
-          "                both scenarios - death & survival. The profits that are availed\n" +
-          "                in such plans are the result of investment in equities & debt.",
+        "  Child Education Insurance Plans are insurance plans that take care of your protection and savings needs for securing the future of your children\n" +
+          "\n" +
+          "As a parent, one of your most important goals would be to make sure that your children have a bright future and lead their lives comfortably.",
       ],
     },
+
     {
       id: 4,
-      title: "Unit Linked Insurance Plans (ULIPs)",
+      title: "Happy Retirement Plan",
       lines: [
-        "As the name suggests, this plan is linked to the markets.",
-        "This type of plan are a variant of traditional endowment plan\n" +
-          "                and pay out a certain sum assured on death or maturity,\n" +
-          "                whichever is earlier.",
-      ],
-    },
-    {
-      id: 5,
-      title: "Money Back Policy",
-      lines: [
-        "This type of policy gives out periodic payments over the policy\n" +
-          "                term.",
-        "Incase of the death of the policy holder, the beneficiaries get\n" +
-          "                the full sum assured and if the holder survives the policy term,\n" +
-          "                he/she gets the balance amount (sum assured).",
+        "        The thumb rule for retirement planning is - the earlier you start, the more you save.\n" +
+          "\n" +
+          "However, with age, your priorities change too. So, you need to factor in the cost of living in the present vis- a -vis future,\n " +
+          "inflationary pressures as well as healthcare costs. It is not about the quantity, it is more about the  quality and your future needs.",
       ],
     },
     {
       id: 6,
-      title: "Chile Higher Education Plan",
+      title: "Money Back Policy",
       lines: [
-        "This type of policy gives out periodic payments over the policy term.\n" +
-          "\n" +
-          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
-      ],
-    },
-    {
-      id: 7,
-      title: "Daughter Marriage Plan",
-      lines: [
-        "This type of policy gives out periodic payments over the policy term.\n" +
-          "\n" +
-          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+        "A money back policy is a type of life insurance product that provides the dual benefit of investment and protection. With a money back policy, you can receive returns at regular intervals during the policy term. A money back policy also provides a life cover that keeps your loved ones financially protected in case of an unfortunate event.",
       ],
     },
     {
       id: 8,
-      title: "Happy Retirement Plan",
+      title: "Daughter Marriage Plan",
       lines: [
-        "This type of policy gives out periodic payments over the policy term.\n" +
+        "Planning for children’s marriage starts when the children are young\n" +
           "\n" +
-          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+          "You must save and invest as early as possible to give the money the time to grow into a large corpus.  You must choose an investment that offers return above inflation over the long term.",
       ],
     },
     {
       id: 9,
-      title: "Tac Benefit Plan",
+      title: "Term Life Insurance",
       lines: [
-        "This type of policy gives out periodic payments over the policy term.\n" +
-          "\n" +
-          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+        "Term insurance is a type of life insurance that provides coverage for a specific period of time or years, i.e., a term. This type of life insurance provides a financial benefit to the nominee in case of the unfortunate demise of the insured during the policy term. Term Insurance policies provide high life cover at lower premiums.",
       ],
     },
     {
       id: 10,
-      title: "Lifetime Income & Protection Plam",
+      title: "Endowment Plan",
       lines: [
-        "This type of policy gives out periodic payments over the policy term.\n" +
-          "\n" +
-          "Incase of the death of the policy holder, the beneficiaries get the full sum assured and if the holder survives the policy term, he/she gets the balance amount (sum assured).",
+        "Endowment plan is a life insurance policy which provides you with a combination of both i.e.: an insurance cover, as well as an savings plan. It helps you in saving regularly over a specific period of time,\n " +
+          "so that you are able to get a lump sum amount on policy maturity, if the policyholder survives the policy term.",
+      ],
+    },
+    {
+      id: 11,
+      title: "Whole Life Policy",
+      lines: [
+        "Are one type of permanent life insurance. Universal life, indexed universal life, and variable universal life are others. Whole life insurance is the original life insurance policy, But whole life does not equal permanent life insurance as there are many types of permanent life.",
+      ],
+    },
+    {
+      id: 12,
+      title: "Unit Linked Insurance Plans (ULIPs)",
+      lines: [
+        " ULIP is the acronym for Unit Linked Insurance Plan.",
+        "A ULIP is the combination of investment and insurance.\n" +
+          "Within this plan,the policyholders can make the premium payment annually or monthly. One part of the premium amount is used to provide a life insurance cover and the remaining sum is invested.",
       ],
     },
   ];
@@ -158,25 +143,28 @@ export default function Insurance() {
               </h2>
 
               <p className="  text-md font-base text-gray-600 my-3 ">
-                Well this page is aimed to give you a complete understanding on
-                how it works and what you need to understand to choose the
-                products that suits you the best. As at every life stage,
-                everyone has a set of primary needs that requires sufficient
-                funds to fulfill them. This is where life insurance comes into
-                the picture- as it offers tailor made products to cover every
-                aspect at different stages of life.
+                Life insurance provides financial security for loved ones in the
+                event of the policyholder's death. The death benefit can be used
+                to cover funeral and burial expenses, pay off debts, or provide
+                for the family's future financial needs. Choosing the right life
+                insurance policy is an important decision. There are many
+                factors to consider, such as the policy's death benefit, premium
+                payments, and terms. It is important to compare different
+                policies and choose the one that best meets the needs of the
+                policyholder and their beneficiaries.
               </p>
               <div className="flex  text-md font-base text-gray-600">
                 <div className=" flex align-center justify-center">
                   {" "}
                   <Image className="px-10" src={insurance} alt="" />
                 </div>
-                <div>
+                <div className="my-10">
                   <p>
-                    There is no doubt that life insurance is a must have for
-                    everyone. Hence its very crucial to have a complete
-                    understanding of the value a life insurance policy can bring
-                    in to your life and that of your loved ones.
+                    A life insurance policy typically covers the policyholder's
+                    death, but it can also cover other events such as terminal
+                    illness or critical illness. The policy's terms will
+                    determine what events are covered and how the death benefit
+                    is paid out.
                   </p>
                   <p className="my-3">
                     A life insurance policy is actually a contract with a
@@ -185,37 +173,33 @@ export default function Insurance() {
                     to the nominees or beneficiaries upon the death of the
                     insurer.
                   </p>
-                  <p className="my-3">
-                    While choosing a life insurance, the advisor will help you
-                    to map it needs & goals. This will help you pick out the
-                    options that suits you the best
-                  </p>
                 </div>
               </div>
             </div>
             <div className="mt-12">
               <h1 className="text-xl font-bold text-green-600 ">
-                What Does It Offer?
+                What Life Insurance Offer?
               </h1>
 
               <p className="  text-md font-base text-gray-600 my-3 ">
-                Insurance has lot to offer in terms financial security and peace
-                of mind. It ensures that your family is taken care of in your
-                absence. It not only helps in providing coverage for all sorts
-                of risks, but builds an opportunity to help you grow your
-                investments. Life insurance is a long term investment tool that
-                helps you meet future costs like childrens education expenses,
-                retirement expenses etc.
+                Most life insurance policies offer a death benefit, which is a
+                lump sum of money paid to the beneficiaries of the policyholder
+                upon their death. Some policies also offer living benefits,
+                which are payments made to the policyholder while they are still
+                alive. These benefits can be used to cover expenses such as
+                long-term care or medical bills. Life insurance is a long term
+                investment tool that helps you meet future costs like daughter
+                marriage plan, retirement expenses, children education plan etc.
               </p>
               <p className="text-md font-base text-gray-600 my-3 ">
-                There are plenty of life insurance plans available, depending on
-                an individuals needs, many of these plans can also be customized
-                to meet their likes.
+                There are wide range of life insurance plans available,
+                depending on an individuals needs, many of these plans can also
+                be customized to meet their goals.
               </p>
             </div>
             <div className="flex flex-col items-center mt-12">
               <h1 className="text-xl font-bold text-green-600 ">
-                Types Of Insurance
+                Types Of Schemes/Plans
               </h1>
               <div className="flex flex-wrap gap-x-8 gap-y-4 justify-center mt-4">
                 {insurancePlans.map((plan) => (
