@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -12,24 +13,29 @@ export const Footer = () => {
       </span>
       <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-800 dark:text-gray-800 sm:mt-0">
         <li>
-          <a href="#" className="mr-4 hover:underline md:mr-6 ">
+          <Link href="/about" className="mr-4 hover:underline md:mr-6 ">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="mr-4 hover:underline md:mr-6">
-            Privacy Policy
-          </a>
+          <Link href="/insurance" className="mr-4 hover:underline md:mr-6">
+            Insurance
+          </Link>
         </li>
         <li>
-          <a href="#" className="mr-4 hover:underline md:mr-6">
-            Licensing
-          </a>
+          <Link href="/mutualfunds" className="mr-4 hover:underline md:mr-6">
+            Mutual&nbsp;Funds
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:underline">
-            Contact
-          </a>
+          <Link href="/homeloans" className="hover:underline">
+            Home&nbsp;Loan
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact" className="px-3 hover:underline">
+            Contact Us
+          </Link>
         </li>
       </ul>
     </footer>

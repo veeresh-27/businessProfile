@@ -1,6 +1,6 @@
 // import insurance from "../public/img/insurance.png";
 import all from "../../public/img/all.jpg";
-import banner from "../../public/img/personalbanner_in.jpg";
+import banner from "../../public/img/home-page-cover-design-personal-accident.jpg";
 
 import personal from "../../public/img/personal.png";
 import insurance from "../../public/img/insurance.png";
