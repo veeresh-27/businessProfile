@@ -119,17 +119,17 @@ export default function MutualFunds() {
             <div className="flex">
               <div className="">
                 <p className="text-md font-base text-gray-600 ">
-                  For the fund's management, the AMC charges a fee to the
-                  investor known as the expense ratio. It is not a fixed fee and
-                  varies from one mutual fund to another. SEBI has defined the
-                  maximum limit of the expense ratio that can be charged on the
-                  basis of the total assets of the fund. In India, the capital
-                  markets regulator SEBI (Securities and Exchange Board of
-                  India) has encouraged the mutual fund industry by creating a
-                  system that works for the benefit of all stakeholders,
-                  including investors and mutual fund sponsors. Regulations are
-                  passed from time to time which improves functioning and help
-                  attract investments and generate growth.
+                  For the fund management, the AMC charges a fee to the investor
+                  known as the expense ratio. It is not a fixed fee and varies
+                  from one mutual fund to another. SEBI has defined the maximum
+                  limit of the expense ratio that can be charged on the basis of
+                  the total assets of the fund. In India, the capital markets
+                  regulator SEBI (Securities and Exchange Board of India) has
+                  encouraged the mutual fund industry by creating a system that
+                  works for the benefit of all stakeholders, including investors
+                  and mutual fund sponsors. Regulations are passed from time to
+                  time which improves functioning and help attract investments
+                  and generate growth.
                 </p>
               </div>
             </div>

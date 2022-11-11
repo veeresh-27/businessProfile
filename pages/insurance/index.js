@@ -144,11 +144,11 @@ export default function Insurance() {
 
               <p className="  text-md font-base text-gray-600 my-3 ">
                 Life insurance provides financial security for loved ones in the
-                event of the policyholder's death. The death benefit can be used
+                event of the policyholders death. The death benefit can be used
                 to cover funeral and burial expenses, pay off debts, or provide
-                for the family's future financial needs. Choosing the right life
+                for the family future financial needs. Choosing the right life
                 insurance policy is an important decision. There are many
-                factors to consider, such as the policy's death benefit, premium
+                factors to consider, such as the policys death benefit, premium
                 payments, and terms. It is important to compare different
                 policies and choose the one that best meets the needs of the
                 policyholder and their beneficiaries.
@@ -160,11 +160,11 @@ export default function Insurance() {
                 </div>
                 <div className="my-10">
                   <p>
-                    A life insurance policy typically covers the policyholder's
+                    A life insurance policy typically covers the policyholders
                     death, but it can also cover other events such as terminal
-                    illness or critical illness. The policy's terms will
-                    determine what events are covered and how the death benefit
-                    is paid out.
+                    illness or critical illness. The policy terms will determine
+                    what events are covered and how the death benefit is paid
+                    out.
                   </p>
                   <p className="my-3">
                     A life insurance policy is actually a contract with a
