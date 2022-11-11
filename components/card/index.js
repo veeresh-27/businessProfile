@@ -13,7 +13,7 @@ export const Card = ({
     <div className="rounded-lg shadow-lg bg-white max-w-xs">
       {image ? (
         <a href={link ? link : "/"}>
-          <Image className="rounded-md" src={image} alt={`${title} img`} />
+          <Image className="rounded-md " src={image} alt={`${title} img`} />
         </a>
       ) : null}
       <div className="p-4">

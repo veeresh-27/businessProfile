@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Homeloans() {
   return (
     <>
-      <div className="flex  align-center justify-center ">
-        <h1 className="text-2xl text-green-600 text-center  justify-between font-bold">
+      <div className="flex align-center justify-center ">
+        <h1 className="text-2xl text-green-600 text-center  font-bold">
           Home Loan{" "}
           <span className="">
             {" "}

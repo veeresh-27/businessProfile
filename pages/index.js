@@ -1,8 +1,8 @@
 import Head from "next/head";
-import mutual from "../public/img/mutual_fund.png";
-import life from "../public/img/life-insurance.png";
-import cal from "../public/img/premium_calculator.png";
-import home from "../public/img/homeloan.jpg";
+import mutual from "../public/img/Mutual_.jpg";
+import life from "../public/img/Life_.jpg";
+import health from "../public/img/health.jpg";
+import home from "../public/img/Home_.jpg";
 import { Card } from "../components/card";
 import Carousel from "../components/carousel";
 //import Slider from "react-slick";
@@ -41,13 +41,13 @@ export default function Home() {
       id: 3,
       title: "Health Insurance",
       des: "Get adequate property, accident coverage & travel insurance with plans that meets your requirements the best.",
-      image: cal,
+      image: health,
       link: "/insurance",
     },
     {
       id: 4,
       title: "Home Loans",
-      des: "Get adequate property, accident coverage & travel insurance with plans that meets your requirements the best.",
+      des: "Make your home loan affordable and easier on your pocket every month with attractive home loan interest rates.",
       image: home,
       link: "/homeloans",
     },
@@ -102,11 +102,14 @@ export default function Home() {
         <div>
           <h3 className="text-2xl text-green-600  font-medium my-5">
             {" "}
-            Know more about our FINANCIAL SERVICES
+            {/*Know more about our FINANCIAL SERVICES*/}
+            Stop Procrastinating Start Financial Planning
           </h3>
           <h4 className="text-base text-gray-400 ">
-            Choose from variety of investment options available. Pick the ones
-            that suit your financial goal & requirements the best
+            We are here to understand your needs and help you achieve your goals
+            by designing the perfect portfolio. Here are few services we offer
+            <br />
+            We are happy to help you get started !!!
           </h4>
         </div>
         <div className="flex justify-center gap-10  my-6 flex-wrap ">
