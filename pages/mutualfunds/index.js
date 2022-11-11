@@ -7,6 +7,8 @@ import { useState } from "react";
 // } from "@material-tailwind/react";
 import typesOfMmutualFund from "../../public/img/mf.jpg";
 import { MutualFundCard } from "../../components/mutualfundCard";
+import dollor from "../../public/img/dollor.jpg";
+import currency from "../../public/img/currency.png";
 // import VerticalTabs from "../../components/verticalTab";
 // import { Card } from "../../components/card";
 
@@ -99,18 +101,28 @@ export default function MutualFunds() {
               passes along the profits (and losses) of those investments to its
               shareholders.
             </p>
-            <div>
-              <p className=" text-md font-base text-gray-600 py-30">
-                More & more people are learning about mutual funds as a means of
-                investment. From putting ones money into fixed deposits or
-                investing in real estate, people are becoming aware of mutual
-                funds as lucrative choice of savings & investments. It is
-                becoming the most sought-after method of investing but having
-                limited or no knowledge of it can hamper ones plan to go ahead
-                with mutual funds completely. Here, we will give you a
-                summarized info about all you need to know about mutual funds &
-                the benefits it carries.
-              </p>
+            <div className="flex">
+              <div className="flex">
+                <Image
+                  src={dollor}
+                  alt={""}
+                  className="w-90 sm:w-full md:w-full"
+                />
+              </div>
+
+              <div className="px-5 py-[90px]">
+                <p className="text-md font-base text-gray-600 ">
+                  More & more people are learning about mutual funds as a means
+                  of investment. From putting ones money into fixed deposits or
+                  investing in real estate, people are becoming aware of mutual
+                  funds as lucrative choice of savings & investments. It is
+                  becoming the most sought-after method of investing but having
+                  limited or no knowledge of it can hamper ones plan to go ahead
+                  with mutual funds completely. Here, we will give you a
+                  summarized info about all you need to know about mutual funds
+                  & the benefits it carries.
+                </p>
+              </div>
             </div>
           </div>
           <div className="my-5   ">
@@ -222,7 +234,7 @@ export default function MutualFunds() {
       ) : (
         <>
           {" "}
-          <div className="my-5">
+          <div className=" my-5">
             <h1 className="text-xl text-green-600  font-bold">What Is SIP?</h1>
             <p className="text-sm py-2">
               Systematic Investment Plan (SIP) is a very easy & convenient mode
@@ -291,6 +303,9 @@ export default function MutualFunds() {
             <h1 className="text-xl text-green-600  font-bold">
               Power Of Compounding
             </h1>
+            <div>
+              <Image src={currency} alt="" className="w-40" />
+            </div>
             <>
               <div>
                 <div>What is Power Of Compounding ?</div>
