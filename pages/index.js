@@ -1,6 +1,6 @@
 import Head from "next/head";
 import mutual from "../public/img/Mutual_.jpg";
-import life from "../public/img/Life_.jpg";
+import life from "../public/img/life_.jpg";
 import health from "../public/img/health.jpg";
 import home from "../public/img/Home_.jpg";
 import { Card } from "../components/card";
