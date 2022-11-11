@@ -111,7 +111,7 @@ export default function MutualFunds() {
                   many other responsibilities.
                 </p>
               </div>
-              <div className="flex  w-[400px]">
+              <div className="flex p-4 md:w-[400px]">
                 <Image src={topImage} alt={""} />
               </div>{" "}
             </div>

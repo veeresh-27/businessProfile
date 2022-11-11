@@ -4,6 +4,7 @@ import banner from "../../public/img/home-page-cover-design-personal-accident.jp
 
 import personal from "../../public/img/personal.png";
 import insurance from "../../public/img/insurance.png";
+import whyInsurance from "../../public/img/why-choose-us.png";
 import Image from "next/image";
 
 import { InsuranceCard } from "../../components/insuranceCard";
@@ -29,7 +30,7 @@ export default function Insurance() {
     },
     {
       id: 2,
-      title: "Lifetime Income & Protection Plam",
+      title: "Lifetime Income & Protection Plan",
       lines: [
         " Retirement years are surely the golden phase of life and anyone would wish to do\n" +
           "\n" +
@@ -132,47 +133,50 @@ export default function Insurance() {
       {active === 0 ? (
         <div className="  py-2 bg-white-200  justify-center  ">
           <div className="py-4">
-            <div>
-              <h1 className="text-xl text-green-600  font-bold">
-                Why Life Insurance
-              </h1>
+            <div className="flex items-center md:justify-between flex-col md:flex-row">
+              <div className=" flex md:w-[400px]">
+                {" "}
+                <Image className="" src={whyInsurance} alt="" />
+              </div>
+              <div className="flex flex-col basis-3/5">
+                <h1 className="text-xl text-green-600  font-bold">
+                  Why Life Insurance
+                </h1>
 
-              <h2 className="text-lg my-4   ">
-                Looking for Investing in a Life Insurance product? But not sure
-                exactly how it works?
-              </h2>
+                <h2 className="text-lg my-4   ">
+                  Looking for Investing in a Life Insurance product? But not
+                  sure exactly how it works?
+                </h2>
 
-              <p className="  text-md font-base text-gray-600 my-3 ">
-                Life insurance provides financial security for loved ones in the
-                event of the policyholders death. The death benefit can be used
-                to cover funeral and burial expenses, pay off debts, or provide
-                for the family future financial needs. Choosing the right life
-                insurance policy is an important decision. There are many
-                factors to consider, such as the policys death benefit, premium
-                payments, and terms. It is important to compare different
-                policies and choose the one that best meets the needs of the
-                policyholder and their beneficiaries.
-              </p>
-              <div className="flex  text-md font-base text-gray-600">
-                <div className=" flex align-center justify-center">
-                  {" "}
-                  <Image className="px-10" src={insurance} alt="" />
-                </div>
-                <div className="my-10">
-                  <p>
-                    A life insurance policy typically covers the policyholders
-                    death, but it can also cover other events such as terminal
-                    illness or critical illness. The policy terms will determine
-                    what events are covered and how the death benefit is paid
-                    out.
-                  </p>
-                  <p className="my-3">
-                    A life insurance policy is actually a contract with a
-                    insurance company. A lump sum amount is provided, in
-                    exchange for premium payments, known as the death benefits,
-                    to the nominees or beneficiaries upon the death of the
-                    insurer.
-                  </p>
+                <p className="  text-md font-base text-gray-600 my-3 ">
+                  Life insurance provides financial security for loved ones in
+                  the event of the policyholder&apos;s death. The death benefit
+                  can be used to cover funeral and burial expenses, pay off
+                  debts, or provide for the family&apos;s future financial
+                  needs. Choosing the right life insurance policy is an
+                  important decision. There are many factors to consider, such
+                  as the policy&apos;s death benefit, premium payments, and
+                  terms. It is important to compare different policies and
+                  choose the one that best meets the needs of the policyholder
+                  and their beneficiaries.
+                </p>
+                <div className="flex  text-md font-base text-gray-600">
+                  <div className="my-10">
+                    <p>
+                      A life insurance policy typically covers the
+                      policyholder&apos;s death, but it can also cover other
+                      events such as terminal illness or critical illness. The
+                      policy&apos;s terms will determine what events are covered
+                      and how the death benefit is paid out.
+                    </p>
+                    <p className="my-3">
+                      A life insurance policy is actually a contract with a
+                      insurance company. A lump sum amount is provided, in
+                      exchange for premium payments, known as the death
+                      benefits, to the nominees or beneficiaries upon the death
+                      of the insurer.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -250,7 +254,7 @@ export default function Insurance() {
             <h1 className=" text-xl font-bold text-green-600">
               Personal Accident
             </h1>
-            <div className=" flex align-center justify-center">
+            <div className=" flex align-center justify-center md:w-[80%]">
               <Image src={banner} className="px-10 mt-6" alt="" />
             </div>
             <h2 className=" text-md font-medium text-green-600 my-3 mt-6">

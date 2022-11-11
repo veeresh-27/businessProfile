@@ -69,9 +69,6 @@ export default function Contact() {
       <div className=" container mx-auto -mx-4 flex flex-wrap lg:justify-between ">
         <div className="container mx-auto -mx-4 flex flex-wrap lg:justify-between w-full px-4 lg:w-1/2 xl:w-6/12 mb-12 max-w-[570px] lg:mb-0">
           <div className="mb-12 max-w-[570px] lg:mb-0">
-            <span className="text-green-600 mb-4  text-base font-semibold ">
-              Contact Us
-            </span>
             <h2 className="text-dark text-green-600 mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
               GET IN TOUCH WITH US
             </h2>
