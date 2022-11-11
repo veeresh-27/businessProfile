@@ -149,7 +149,7 @@ export default function MutualFunds() {
 
             <div>
               <h1 className="text-md text-green-600  my-4 font-bold">
-                Equity Funds
+                1. Equity Funds
               </h1>
               <p className="text-md font-base text-gray-600">
                 These are type of funds that primarily invest in stocks and main
@@ -159,7 +159,7 @@ export default function MutualFunds() {
                 medium or small.
               </p>
               <h1 className="text-md text-green-600  my-4 font-bold">
-                Debt Funds
+                2. Debt Funds
               </h1>
               <p className="text-md font-base text-gray-600 ">
                 These funds are known as safe investments and provide fixed
@@ -167,7 +167,7 @@ export default function MutualFunds() {
                 company bonds, government bonds, fixed income assets.
               </p>
               <h1 className="text-md text-green-600  my-4 font-bold">
-                Money Market Funds
+                3. Money Market Funds
               </h1>
               <p className="text-md font-base text-gray-600">
                 A money market mutual fund is a kind of mutual fund that invests
@@ -178,7 +178,7 @@ export default function MutualFunds() {
                 happen.
               </p>
               <h1 className="text-md text-green-600  my-4 font-bold">
-                Income Funds
+                4. Income Funds
               </h1>
               <p className="text-md font-base text-gray-600">
                 Income Funds mainly focus on generating regular income for the
@@ -187,7 +187,7 @@ export default function MutualFunds() {
                 money market Instruments, and debentures.
               </p>
               <h1 className="text-md text-green-600  my-4 font-bold">
-                International Funds
+                5. International Funds
               </h1>
               <p className="text-md font-base text-gray-600">
                 The international fund usually refers to an investment or mutual
@@ -195,7 +195,7 @@ export default function MutualFunds() {
               </p>
 
               <h1 className="text-md text-green-600  my-4 font-bold">
-                Bond Funds
+                6. Bond Funds
               </h1>
               <p className="text-md font-base text-gray-600">
                 A bond mutual fund invests in debt instruments issued by
@@ -206,7 +206,7 @@ export default function MutualFunds() {
               </p>
 
               <h1 className="text-md text-green-600  my-4 font-bold">
-                Dividend Fund
+                7. Dividend Fund
               </h1>
               <p className="text-md font-base text-gray-600">
                 This type of mutual funds invests in stock of companies that pay
@@ -217,7 +217,7 @@ export default function MutualFunds() {
                 appreciation.
               </p>
               <h1 className="text-md text-green-600  my-4 font-bold">
-                Balanced Funds
+                8. Balanced Funds
               </h1>
               <p className="text-md font-base text-gray-600">
                 The strategy used by these funds are to maintain a certain

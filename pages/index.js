@@ -2,7 +2,9 @@ import Head from "next/head";
 import mutual from "../public/img/mutual_fund.png";
 import life from "../public/img/life-insurance.png";
 import cal from "../public/img/premium_calculator.png";
+import home from "../public/img/homeloan.jpg";
 import { Card } from "../components/card";
+import Carousel from "../components/carousel";
 //import Slider from "react-slick";
 //import Image from "next/image";
 
@@ -42,22 +44,29 @@ export default function Home() {
       image: cal,
       link: "/insurance",
     },
+    {
+      id: 4,
+      title: "Home Loans",
+      des: "Get adequate property, accident coverage & travel insurance with plans that meets your requirements the best.",
+      image: home,
+      link: "/homeloans",
+    },
   ];
 
-  // const carouselImages = [
-  //   {
-  //     img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  //     alt: "Carousel-img",
-  //   },
-  //   {
-  //     img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  //     alt: "Carousel-img",
-  //   },
-  //   {
-  //     img: "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600",
-  //     alt: "Carousel-img",
-  //   },
-  // ];
+  const carouselImages = [
+    {
+      img: "https://www.mashreqbank.com/-/jssmedia/Images/UAE/Personal/Products/insurance/iStock-1208672734.ashx?h=1840&iar=0&w=2759&hash=53713C441FB13639A5A9E14376CB3D55",
+      alt: "Carousel-img",
+    },
+    {
+      img: "https://www.indusind.com/iblogs/wp-content/uploads/saving-acount.jpg",
+      alt: "Carousel-img",
+    },
+    {
+      img: "https://www.righthorizons.com/wp-content/uploads/2022/06/Investing-globally-options-for-Indian-residents.jpg",
+      alt: "Carousel-img",
+    },
+  ];
   return (
     <div className="flex flex-col">
       <Head>
@@ -68,61 +77,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="pt-4 relative opacity-40">
-        {/*<Slider {...settings}>*/}
-        {/*  <div className="">*/}
-        {/*    <img*/}
-        {/*      src={*/}
-        {/*        "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"*/}
-        {/*      }*/}
-        {/*      alt={"name"}*/}
-        {/*      style={{*/}
-        {/*        width: "100%",*/}
-        {/*        height: "450px",*/}
-        {/*        objectFit: "cover",*/}
-        {/*      }}*/}
-        {/*    />*/}
-        {/*  </div>*/}
-        {/*  <div className="">*/}
-        {/*    <img*/}
-        {/*      src={*/}
-        {/*        "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"*/}
-        {/*      }*/}
-        {/*      alt={"name"}*/}
-        {/*      style={{*/}
-        {/*        width: "100%",*/}
-        {/*        height: "450px",*/}
-        {/*        objectFit: "cover",*/}
-        {/*      }}*/}
-        {/*    />*/}
-        {/*  </div>{" "}*/}
-        {/*  <div className="">*/}
-        {/*    <img*/}
-        {/*      src={*/}
-        {/*        "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"*/}
-        {/*      }*/}
-        {/*      alt={"nam"}*/}
-        {/*      style={{*/}
-        {/*        width: "100%",*/}
-        {/*        height: "450px",*/}
-        {/*        objectFit: "cover",*/}
-        {/*      }}*/}
-        {/*    />*/}
-        {/*  </div>{" "}*/}
-        {/*  <div className="">*/}
-        {/*    <img*/}
-        {/*      src={*/}
-        {/*        "https://images.pexels.com/photos/705771/pexels-photo-705771.jpeg?auto=compress&cs=tinysrgb&w=1600"*/}
-        {/*      }*/}
-        {/*      alt={"name"}*/}
-        {/*      style={{*/}
-        {/*        width: "100%",*/}
-        {/*        height: "450px",*/}
-        {/*        objectFit: "cover",*/}
-        {/*      }}*/}
-        {/*    />*/}
-        {/*  </div>*/}
-        {/*</Slider>*/}
+      <div className="pt-4 relative opacity-60">
+        <Carousel caruselImages={carouselImages} />
       </div>
       <div className="absolute flex flex-col justify-center w-full gap-4 py-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12 top-28">
         <h1 className="flex self-center pt-5 text-xl font-bold text-center  sm:text-xl md:text-2xl lg:text-4xl">

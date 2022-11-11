@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 export const Card = ({
   image,
-  link = "",
+  link,
   title = "Head",
   des = "loremdfv invifd eodivn eoinfv def dfvef",
 }) => {

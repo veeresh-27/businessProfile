@@ -351,7 +351,7 @@ export default function Insurance() {
 
             <div className="mt-4">
               <h2 className="text-md text-green-600 font-medium ">
-                Accidental Death
+                1. Accidental Death
               </h2>
               <p className=" text-md font-base text-gray-600 ">
                 Accidental death coverage gives compensation on the
@@ -363,7 +363,7 @@ export default function Insurance() {
             <div className="mt-4">
               {" "}
               <h2 className="text-md text-green-600 font-medium ">
-                Permanent or Total Disability
+                2. Permanent or Total Disability
               </h2>
               <p className=" text-md font-base text-gray-600 ">
                 If the accident causes permanent or total disability, then 100%
@@ -373,17 +373,7 @@ export default function Insurance() {
             <div className="mt-4">
               {" "}
               <h2 className="text-md text-green-600 font-medium ">
-                Permanent or Total Disability
-              </h2>
-              <p className=" text-md font-base text-gray-600 ">
-                If the accident causes permanent or total disability, then 100%
-                of the sum insured is payable to the policyholder.
-              </p>
-            </div>
-            <div className="mt-4">
-              {" "}
-              <h2 className="text-md text-green-600 font-medium ">
-                Accidental Dismemberment
+                3. Accidental Dismemberment
               </h2>
               <p className=" text-md font-base text-gray-600 ">
                 If policyholders body part has been dismembered or severed in
@@ -393,7 +383,7 @@ export default function Insurance() {
             <div className="mt-4">
               {" "}
               <h2 className="text-md text-green-600 font-medium">
-                Additional Benefits
+                4. Additional Benefits
               </h2>
               <p className=" text-md font-base text-gray-600">
                 Funeral expenses can be claimed in case of accidental death.
@@ -403,7 +393,7 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               <h2 className="text-md text-green-600 font-medium ">
-                Daily Hospitalization Expenses
+                5. Daily Hospitalization Expenses
               </h2>
               <p className=" text-md font-base text-gray-600 ">
                 Monetary relief offered to the patient on daily basis on
@@ -412,7 +402,7 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               {" "}
-              <h2 className="text-md text-green-600 font-medium">Burns</h2>
+              <h2 className="text-md text-green-600 font-medium">6. Burns</h2>
               <p className=" text-md font-base text-gray-600 ">
                 A certain amount of the policy sum is payable, when an accident
                 results in hospitalization & the victim is being treated for
@@ -421,7 +411,9 @@ export default function Insurance() {
             </div>
             <div className="mt-4">
               {" "}
-              <h2 className="text-md text-green-600 font-medium  ">Bonuses</h2>
+              <h2 className="text-md text-green-600 font-medium  ">
+                7. Bonuses
+              </h2>
               <p className=" text-md font-base text-gray-600 ">
                 Some policies may offer bonuses to the dependent kids of the
                 policyholder. This becomes helpful in case of the death of the
