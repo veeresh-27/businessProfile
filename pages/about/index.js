@@ -1,4 +1,4 @@
-import Image from "next/image";
+//import Image from "next/image";
 //import about from "../../public/img/about.png";
 import { IconPhone } from "../../public/icons/iconsPhone";
 import { IconsMail } from "../../public/icons/iconsMail";
