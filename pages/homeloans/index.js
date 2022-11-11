@@ -1,11 +1,19 @@
+import icon from "../../public/img/home_icon.jpg";
+import Image from "next/image";
 export default function Homeloans() {
   return (
     <>
-      <h1 className="text-2xl text-green-600 text-center font-bold">
-        Home Loan
-      </h1>
+      <div className="flex  align-center justify-center ">
+        <h1 className="text-2xl text-green-600 text-center  justify-between font-bold">
+          Home Loan{" "}
+          <span className="">
+            {" "}
+            <Image src={icon} alt="" className="w-32 mx-9" />{" "}
+          </span>
+        </h1>
+      </div>
       <div className="p-4 md:p-14 lg:p-20">
-        <h1 className="text-xl py-4 text-green-600">
+        <h1 className="text-xl py-3 text-green-600">
           “Helping you make important decisions”
         </h1>
         <p className="text-gray-500">
