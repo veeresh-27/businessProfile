@@ -62,7 +62,10 @@ export default function MutualFunds() {
   ];
   return (
     <div className="px-4 md:px-14 lg:px-24">
-      <div className="flex pt-10 pb-6 gap-4">
+      {/*<h1 className="text-2xl text-green-600 text-center font-bold">*/}
+      {/*  Know Mutual Fund*/}
+      {/*</h1>*/}
+      <div className="flex font-medium justify-center md:justify-start pt-5 gap-8">
         {tabs?.map(({ name }, index) => (
           <>
             <div
@@ -81,11 +84,8 @@ export default function MutualFunds() {
       </div>
       {activeTab === 0 ? (
         <>
-          {/*<h1 className="text-2xl text-green-600  font-bold">*/}
-          {/*  Know Mutual Fund*/}
-          {/*</h1>*/}
           <div>
-            <p className=" text-md font-bold text-gray-500 mb-4 ">
+            <p className=" text-md font-bold text-gray-500 mb-4 py-4  ">
               {" "}
               <span className="text-xl text-green-600 ">Mutual Funds</span>{" "}
               offer a way for a group of investors to effectively pool their
@@ -99,16 +99,19 @@ export default function MutualFunds() {
               passes along the profits (and losses) of those investments to its
               shareholders.
             </p>
-            <p className=" text-md font-base text-gray-600 py-30">
-              More & more people are learning about mutual funds as a means of
-              investment. From putting ones money into fixed deposits or
-              investing in real estate, people are becoming aware of mutual
-              funds as lucrative choice of savings & investments. It is becoming
-              the most sought-after method of investing but having limited or no
-              knowledge of it can hamper ones plan to go ahead with mutual funds
-              completely. Here, we will give you a summarized info about all you
-              need to know about mutual funds & the benefits it carries.
-            </p>
+            <div>
+              <p className=" text-md font-base text-gray-600 py-30">
+                More & more people are learning about mutual funds as a means of
+                investment. From putting ones money into fixed deposits or
+                investing in real estate, people are becoming aware of mutual
+                funds as lucrative choice of savings & investments. It is
+                becoming the most sought-after method of investing but having
+                limited or no knowledge of it can hamper ones plan to go ahead
+                with mutual funds completely. Here, we will give you a
+                summarized info about all you need to know about mutual funds &
+                the benefits it carries.
+              </p>
+            </div>
           </div>
           <div className="my-5   ">
             <h1 className="text-xl text-green-600  my-4 font-bold ">
@@ -118,7 +121,7 @@ export default function MutualFunds() {
               Lets glance at why should one consider investing in mutual funds
               over other options to achieve their financial goals:
             </h3>
-            <div className="flex my-5 gap-6 flex-wrap justify-center">
+            <div className="flex my-5 gap-5 flex-wrap justify-center">
               {mf.map(({ id, title, desc }) => (
                 <MutualFundCard key={id} title={title} desc={desc} />
               ))}

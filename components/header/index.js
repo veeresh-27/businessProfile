@@ -22,7 +22,7 @@ export function Header() {
         <IconBurger />
       </div>
       <div
-        className={` md:hidden rounded fixed inset-1 bg-gray-900/95 left-1/3 top-12  p-3 z-9 ${
+        className={` md:hidden rounded fixed inset-1 bg-gray-900/95 left-1/2 top-12 p-4  z-9 ${
           mobNav ? "flex flex-col justify-center" : "hidden"
         } `}
       >

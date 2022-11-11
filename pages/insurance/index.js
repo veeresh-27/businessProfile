@@ -124,10 +124,10 @@ export default function Insurance() {
   return (
     <div className=" px-4 md:px-14 lg:px-24">
       {" "}
-      <h1 className="text-2xl text-green-600 text-center font-bold ">
-        Life Insurance
-      </h1>
-      <div className="flex font-medium justify-center md:justify-start pt-10 gap-8">
+      {/*<h1 className="text-2xl text-green-600 text-center font-bold ">*/}
+      {/*  Life Insurance*/}
+      {/*</h1>*/}
+      <div className="flex font-medium justify-center md:justify-start pt-5 gap-8">
         {tabs?.map(({ name }, index) => (
           <>
             <div
@@ -166,33 +166,31 @@ export default function Insurance() {
                 the picture- as it offers tailor made products to cover every
                 aspect at different stages of life.
               </p>
-              <div className="text-md font-base text-gray-600">
-                <div className=" justify-center ">
+              <div className="flex  text-md font-base text-gray-600">
+                <div className=" flex align-center justify-center">
                   {" "}
-                  <Image
-                    className="rounded-md md:px-40  lg:hidden ... "
-                    src={insurance}
-                    alt=""
-                  />
+                  <Image className="px-10" src={insurance} alt="" />
                 </div>
-
-                <p>
-                  There is no doubt that life insurance is a must have for
-                  everyone. Hence its very crucial to have a complete
-                  understanding of the value a life insurance policy can bring
-                  in to your life and that of your loved ones.
-                </p>
-                <p className="my-3">
-                  A life insurance policy is actually a contract with a
-                  insurance company. A lump sum amount is provided, in exchange
-                  for premium payments, known as the death benefits, to the
-                  nominees or beneficiaries upon the death of the insurer.
-                </p>
-                <p className="my-3">
-                  While choosing a life insurance, the advisor will help you to
-                  map it needs & goals. This will help you pick out the options
-                  that suits you the best
-                </p>
+                <div>
+                  <p>
+                    There is no doubt that life insurance is a must have for
+                    everyone. Hence its very crucial to have a complete
+                    understanding of the value a life insurance policy can bring
+                    in to your life and that of your loved ones.
+                  </p>
+                  <p className="my-3">
+                    A life insurance policy is actually a contract with a
+                    insurance company. A lump sum amount is provided, in
+                    exchange for premium payments, known as the death benefits,
+                    to the nominees or beneficiaries upon the death of the
+                    insurer.
+                  </p>
+                  <p className="my-3">
+                    While choosing a life insurance, the advisor will help you
+                    to map it needs & goals. This will help you pick out the
+                    options that suits you the best
+                  </p>
+                </div>
               </div>
             </div>
             <div className="mt-12">
