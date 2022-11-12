@@ -143,10 +143,10 @@ export default function Insurance() {
                   Why Life Insurance
                 </h1>
 
-                <h2 className="text-lg my-4   ">
-                  Looking for Investing in a Life Insurance product? But not
-                  sure exactly how it works?
-                </h2>
+                {/*<h2 className="text-lg my-4   ">*/}
+                {/*  Looking for Investing in a Life Insurance product? But not*/}
+                {/*  sure exactly how it works?*/}
+                {/*</h2>*/}
 
                 <p className="  text-md font-base text-gray-600 my-3 ">
                   Life insurance provides financial security for loved ones in
