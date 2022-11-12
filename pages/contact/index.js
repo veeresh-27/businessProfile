@@ -65,7 +65,7 @@ export default function Contact() {
     }
   };
   return (
-    <section className="relative z-10 overflow-hidden bg-white py-20 px-20 lg:py-[120px]">
+    <section className="relative z-10 overflow-hidden bg-white py-20 px-20 lg:py-[90px]">
       <div className=" container mx-auto -mx-4 flex flex-wrap lg:justify-between ">
         <div className="container mx-auto -mx-4 flex flex-wrap lg:justify-between w-full px-4 lg:w-1/2 xl:w-6/12 mb-12 max-w-[570px] lg:mb-0">
           <div className="mb-12 max-w-[570px] lg:mb-0">
@@ -73,9 +73,7 @@ export default function Contact() {
               GET IN TOUCH WITH US
             </h2>
             <p className=" text-gray-500  mb-9  font-medium ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              adiqua minim veniam quis nostrud exercitation ullamco
+              Need something? , Drop a message We will find a best solution.
             </p>
             <div>
               <Image
@@ -86,7 +84,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-full px-5 lg:w-1/2 xl:w-5/12">
+        <div className="w-full  lg:w-1/2 xl:w-5/12">
           <div className="relative rounded-lg bg-white px-10 shadow-lg  ">
             <form onSubmit={handleFormSubmit}>
               <label className="font-medium  text-xl text-slate-700">
