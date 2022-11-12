@@ -18,7 +18,7 @@ export default function About() {
         <div className="grid ">
           {" "}
           <p className="font-base text-md text-gray-400">
-            Financial Advisor | AMFI&#174;, MFD
+            Financial Advisor | AMFI REG MFD
           </p>
           <p>Entrusted by thousands of customers.</p>
           <h3 className=" ">Get in touch</h3>

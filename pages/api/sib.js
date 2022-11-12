@@ -7,11 +7,12 @@ export default function handler(req, res) {
   new SibApiV3Sdk.TransactionalEmailsApi()
     .sendTransacEmail({
       subject: "Thank you for contacting Ishwar Patil",
-      sender: { email: "veereshrm789@gma.com", name: "Ishwar Patil" },
-      replyTo: { email: "veereshrm789@gmail.com", name: "Ishwar Patil" },
+      sender: { email: "info@ishwarpatil.com", name: "Ishwar Patil" },
+      replyTo: { email: "finance.ishwarpatil@gmail.com", name: "Ishwar Patil" },
       to: [{ name: `${name}`, email: `${email}` }],
       htmlContent:
-        "<html><body><h1>Thank you for getting in touch. We will shortly get back to you {{params.bodyMessage}}</h1></body></html>",
+        "<html><body><h1>Thank you for getting in touch. We will shortly get back to you {{params.bodyMessage}}</h1>" +
+        "<p>Ishwar Patil <br/>Finance Advisor <br/>8660446535 <br/></p></body></html>",
       params: { bodyMessage: "" },
     })
     .then(
