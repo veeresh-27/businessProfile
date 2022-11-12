@@ -3,7 +3,7 @@ import all from "../../public/img/all.jpg";
 import banner from "../../public/img/home-page-cover-design-personal-accident.jpg";
 
 import personal from "../../public/img/personal.png";
-import insurance from "../../public/img/insurance.png";
+//import insurance from "../../public/img/insurance.png";
 import whyInsurance from "../../public/img/why-choose-us.png";
 import Image from "next/image";
 
@@ -143,10 +143,10 @@ export default function Insurance() {
                   Why Life Insurance
                 </h1>
 
-                <h2 className="text-lg my-4   ">
-                  Looking for Investing in a Life Insurance product? But not
-                  sure exactly how it works?
-                </h2>
+                {/*<h2 className="text-lg my-4   ">*/}
+                {/*  Looking for Investing in a Life Insurance product? But not*/}
+                {/*  sure exactly how it works?*/}
+                {/*</h2>*/}
 
                 <p className="  text-md font-base text-gray-600 my-3 ">
                   Life insurance provides financial security for loved ones in

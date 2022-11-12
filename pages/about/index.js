@@ -26,7 +26,10 @@ export default function About() {
             <p className="flex gap-2 pt-2">
               <IconPhone /> +91 8660446535
             </p>
-            <p className="flex gap-2 pt-2">
+            <p
+              onClick={() => router.push("mailto:licishwarptil@gmail.com")}
+              className="flex gap-2 pt-2 cursor-pointer"
+            >
               <IconsMail /> licishwarpatil@gmail.com
             </p>
             <p className="flex gap-2 pt-2 items-center">

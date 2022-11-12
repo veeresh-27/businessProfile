@@ -7,9 +7,11 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [disable, setDisable] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    setDisable(true);
     const Data = {
       name,
       email,
@@ -34,6 +36,7 @@ export default function Contact() {
         setEmail("");
         setName("");
         setMessage("");
+        setDisable(false);
       });
 
       //if sucess do whatever you like, i.e toast notification
@@ -65,9 +68,9 @@ export default function Contact() {
     }
   };
   return (
-    <section className="relative z-10 overflow-hidden bg-white py-20 px-20 lg:py-[120px]">
-      <div className=" container mx-auto -mx-4 flex flex-wrap lg:justify-between ">
-        <div className="container mx-auto -mx-4 flex flex-wrap lg:justify-between w-full px-4 lg:w-1/2 xl:w-6/12 mb-12 max-w-[570px] lg:mb-0">
+    <section className="relative overflow-hidden bg-white py-10 px-4 md:px-14 lg:px-20">
+      <div className=" mx-auto  flex flex-wrap lg:justify-between ">
+        <div className="container mx-auto  flex flex-wrap lg:justify-between w-full px-4 lg:w-1/2 xl:w-6/12 mb-12 max-w-[570px] lg:mb-0">
           <div className="mb-12 max-w-[570px] lg:mb-0">
             <h2 className="text-dark text-green-600 mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
               GET IN TOUCH WITH US
@@ -77,20 +80,16 @@ export default function Contact() {
               eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
               adiqua minim veniam quis nostrud exercitation ullamco
             </p>
-            <div>
-              <Image
-                src={support}
-                className="object-contain h-48 w-96"
-                alt=""
-              />
+            <div className="scale-105 flex justify-center">
+              <Image src={support} className="w-[300px] md:w-[400px]" alt="" />
             </div>
           </div>
         </div>
-        <div className="w-full px-5 lg:w-1/2 xl:w-5/12">
-          <div className="relative rounded-lg bg-white  shadow-lg sm:p-12">
+        <div className="w-full lg:w-1/2 xl:w-5/12">
+          <div className="relative rounded-lg bg-white  shadow-lg p-12">
             <form onSubmit={handleFormSubmit}>
               <label className="font-medium  text-xl text-slate-700">
-                Username
+                Name
               </label>
               <div className="mb-3">
                 <input
@@ -134,13 +133,22 @@ export default function Contact() {
                 ></textarea>
               </div>
               <div className="flex justify-center">
-                <button
-                  type="submit"
-                  className="bg-green-300 font-medium text-lg  rounded-full border p-2 px-10  transition
-                    focus:shadow-outline hover:bg-green-600 hover:text-white"
-                >
-                  Submit
-                </button>
+                {disable ? (
+                  <button
+                    className="bg-gray-600 font-medium text-lg  rounded-full border p-2 px-10  transition
+                    focus:shadow-outline  cursor-not-allowed"
+                  >
+                    Submit
+                  </button>
+                ) : (
+                  <button
+                    type="submit"
+                    className="bg-green-300 font-medium text-lg  rounded-full border border-green-300 p-2 px-10  transition
+                    focus:shadow-outline hover:bg-green-600 hover:text-white cursor-pointer"
+                  >
+                    Submit
+                  </button>
+                )}
               </div>
             </form>
           </div>
