@@ -87,10 +87,10 @@ export default function Contact() {
           </div>
         </div>
         <div className="w-full px-5 lg:w-1/2 xl:w-5/12">
-          <div className="relative rounded-lg bg-white  shadow-lg sm:p-12">
+          <div className="relative rounded-lg bg-white px-10 shadow-lg  ">
             <form onSubmit={handleFormSubmit}>
               <label className="font-medium  text-xl text-slate-700">
-                Username
+                Name
               </label>
               <div className="mb-3">
                 <input
@@ -133,11 +133,11 @@ export default function Contact() {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center pb-10">
                 <button
                   type="submit"
                   className="bg-green-300 font-medium text-lg  rounded-full border p-2 px-10  transition
-                    focus:shadow-outline hover:bg-green-600 hover:text-white"
+                    focus:shadow-outline hover:bg-green-600 hover:text-white  "
                 >
                   Submit
                 </button>
