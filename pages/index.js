@@ -1,11 +1,9 @@
 import Head from "next/head";
-import mutual from "../public/img/Mutual_.jpg";
-import life from "../public/img/life_.jpg";
-import health from "../public/img/health.jpg";
-import home from "../public/img/home_.jpg";
 import { Card } from "../components/card";
 import Carousel from "../components/carousel";
-import { useRouter } from "next/router";
+import { FloatingActionButton } from "../components/floatingActionButton";
+import { homeCarouselImages, homeDsiplayCards } from "../constants";
+
 //import Slider from "react-slick";
 //import Image from "next/image";
 
@@ -23,54 +21,10 @@ export default function Home() {
   //   //fade: true,
   //   slidesToScroll: 1,
   // };
-  const router = useRouter();
-  const cards = [
-    {
-      id: 1,
-      title: "Mutual Funds",
-      des: "Get future-ready by investing in mutual funds, a professionally managed investing program & fulfill your long term",
-      image: mutual,
-      link: "/mutualfunds",
-    },
-    {
-      id: 2,
-      title: "Life Insurance",
-      des: "Life a journey filled with uncertainties,so why not plan to counter those with confidence?",
-      image: life,
-      link: "/insurance",
-    },
-    {
-      id: 3,
-      title: "Health Insurance",
-      des: "Get adequate property, accident coverage & travel insurance with plans that meets your requirements the best.",
-      image: health,
-      link: "/insurance",
-    },
-    {
-      id: 4,
-      title: "Home Loans",
-      des: "Make your home loan affordable and easier on your pocket every month with attractive home loan interest rates.",
-      image: home,
-      link: "/homeloans",
-    },
-  ];
 
-  const carouselImages = [
-    {
-      img: "https://www.mashreqbank.com/-/jssmedia/Images/UAE/Personal/Products/insurance/iStock-1208672734.ashx?h=1840&iar=0&w=2759&hash=53713C441FB13639A5A9E14376CB3D55",
-      alt: "Carousel-img",
-    },
-    {
-      img: "https://www.indusind.com/iblogs/wp-content/uploads/saving-acount.jpg",
-      alt: "Carousel-img",
-    },
-    {
-      img: "https://www.righthorizons.com/wp-content/uploads/2022/06/Investing-globally-options-for-Indian-residents.jpg",
-      alt: "Carousel-img",
-    },
-  ];
   return (
-    <div className="flex flex-col">
+    <div className=" flex flex-col ">
+      
       <Head>
         <title>Ishwar Patil</title>
         <meta
@@ -79,10 +33,10 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="pt-4 relative opacity-60">
-        <Carousel caruselImages={carouselImages} />
+      <div className=" relative opacity-60">
+        <Carousel caruselImages={homeCarouselImages} />
       </div>
-      <div className="absolute flex flex-col justify-center w-full gap-4 py-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12 top-28">
+      <div className="absolute flex flex-col justify-center w-full gap-4 py-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12 top-32">
         <h1 className="flex self-center pt-5 text-xl font-bold text-center  sm:text-xl md:text-2xl lg:text-4xl">
           Experience Your Financial Journey Hassle-Free
         </h1>
@@ -115,7 +69,7 @@ export default function Home() {
           </h4>
         </div>
         <div className="flex justify-center gap-10  my-6 flex-wrap ">
-          {cards.map(({ id, title, des, image, link }) => (
+          {homeDsiplayCards?.map(({ id, title, des, image, link }) => (
             <Card key={id} title={title} des={des} image={image} link={link} />
           ))}
         </div>

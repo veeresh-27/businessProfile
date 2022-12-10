@@ -69,7 +69,7 @@ export default function Contact() {
     }
   };
   return (
-    <section className="relative overflow-hidden bg-white py-10 px-4 md:px-14 lg:px-20">
+    <section className="relative overflow-hidden bg-white py-10 padding">
       <Head>
         <title>Contact Ishwar Patil</title>
         <meta
@@ -79,7 +79,7 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className=" mx-auto  flex flex-wrap lg:justify-between ">
-        <div className="container mx-auto  flex flex-wrap lg:justify-between w-full px-4 lg:w-1/2 xl:w-6/12 mb-12 max-w-[570px] lg:mb-0">
+        <div className="container flex flex-wrap lg:justify-between w-full  lg:w-1/2 xl:w-6/12 mb-12 max-w-[570px] lg:mb-0">
           <div className="mb-12 max-w-[570px] lg:mb-0">
             <h2 className="text-dark text-green-600 mb-6 text-[32px] font-bold uppercase sm:text-[40px] lg:text-[36px] xl:text-[40px]">
               GET IN TOUCH WITH US
@@ -93,7 +93,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 xl:w-5/12">
+        <div className="w-full lg:w-1/2 xl:w-5/12 ">
           <div className="relative rounded-lg bg-white  shadow-lg p-12">
             <form onSubmit={handleFormSubmit}>
               <label className="font-medium  text-xl text-slate-700">

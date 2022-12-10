@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 export default function About() {
   const router = useRouter();
   return (
-    <div className="px-4 py-20 md:px-14 lg:px-20 flex flex-col justify-center">
+    <div className="py-20 padding flex flex-col justify-center">
       <Head>
         <title>About Ishwar Patil</title>
         <meta

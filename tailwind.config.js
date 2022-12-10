@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  devIndicators: {
+    buildActivity: false,
+  },
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -9,4 +12,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

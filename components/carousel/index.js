@@ -11,7 +11,7 @@ const Carousel = ({ caruselImages }) => {
   };
 
   const items = caruselImages?.map(({ img }, index) => (
-    <div key={index} style={{ height: "380px" }} className="bannerItem">
+    <div key={index} style={{ height: "480px" }} className="bannerItem">
       <img
         src={img}
         alt="banner"
