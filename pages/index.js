@@ -72,10 +72,10 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Head>
-        <title>Financial Advisor</title>
+        <title>Ishwar Patil</title>
         <meta
           name="description"
-          content="Finance Management | House-Insurance Health-Insurance | Loans"
+          content="Financial Advisor |Finance Management | House-Insurance Health-Insurance | Loans"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -95,8 +95,7 @@ export default function Home() {
           <button
             type="button"
             className="px-6 py-2 border-2 border-green-600 text-white font-medium text-l rounded bg-green-600 hover:bg-green-700 hover:text-white transition-all ease-in-out duration-200"
-            onClick={() => router.push("/contact")}
-          >
+            onClick={() => router.push("/contact")}>
             Get Started
           </button>
         </div>
@@ -109,8 +108,8 @@ export default function Home() {
             Stop Procrastinating & Start Financial Planning
           </h3>
           <h4 className="text-base text-gray-400 ">
-            We are here to understand your needs and help you achieve your goals
-            by designing the perfect portfolio. Here are few services we offer
+            We are here to understand your needs and help you achieve your goals by designing the
+            perfect portfolio. Here are few services we offer
             <br />
             We are happy to help you get started !!!
           </h4>

@@ -1,5 +1,6 @@
 //import Image from "next/image";
 //import about from "../../public/img/about.png";
+import Head from "next/head";
 import { IconPhone } from "../../public/icons/iconsPhone";
 import { IconsMail } from "../../public/icons/iconsMail";
 //import finplan from "../../public/img/financial-planning.webp";
@@ -9,6 +10,14 @@ export default function About() {
   const router = useRouter();
   return (
     <div className="px-4 py-20 md:px-14 lg:px-20 flex flex-col justify-center">
+      <Head>
+        <title>About Ishwar Patil</title>
+        <meta
+          name="description"
+          content="Financial Advisor |Finance Management | House-Insurance Health-Insurance | Loans"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="text-lg text-green-600  font-bold pb-4">
         Financial Planning is an important aspect of the individual as well as
         business life.
