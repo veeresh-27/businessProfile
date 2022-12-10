@@ -3,28 +3,16 @@ import { Card } from "../components/card";
 import Carousel from "../components/carousel";
 import { FloatingActionButton } from "../components/floatingActionButton";
 import { homeCarouselImages, homeDsiplayCards } from "../constants";
+import { useRouter } from "next/router";
 
 //import Slider from "react-slick";
 //import Image from "next/image";
 
 export default function Home() {
   //TODO Spam prevention and security measures to avoid overwhelming with emails
-
-  // const settings = {
-  //   dots: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 1500,
-  //   infinite: true,
-  //   speed: 500,
-  //   arrows: false,
-  //   slidesToShow: 1,
-  //   //fade: true,
-  //   slidesToScroll: 1,
-  // };
-
+  const router = useRouter();
   return (
     <div className=" flex flex-col ">
-      
       <Head>
         <title>Ishwar Patil</title>
         <meta
