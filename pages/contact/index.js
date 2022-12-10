@@ -76,7 +76,8 @@ export default function Contact() {
               GET IN TOUCH WITH US
             </h2>
             <p className=" text-gray-500  mb-9  font-medium ">
-             Need something? , Drop a message We will find a best solution.
+              Need something? , Drop a message We will find a best solution.
+
             </p>
             <div className="scale-105 flex justify-center">
               <Image src={support} className="w-[300px] md:w-[400px]" alt="" />

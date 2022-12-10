@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ishwarpatil.com
+
+# Sitemaps
+Sitemap: https://ishwarpatil.com/sitemap.xml
