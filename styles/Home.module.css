@@ -1,6 +1,6 @@
 .container {
   padding: 0 2rem;
-  background-color: #111111;
+  background-image: url('../public/backdrop-gif.gif');
   color: #fafafa;
 }
 
