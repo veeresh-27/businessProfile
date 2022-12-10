@@ -1,3 +1,4 @@
 import {IconBurger} from "./iconBurger";
+import { IconContact } from "./iconContact";
 
-export {IconBurger};
+export {IconBurger,IconContact};

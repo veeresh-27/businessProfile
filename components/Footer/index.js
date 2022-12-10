@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="p-4 bg-white shadow flex flex-col items-center justify-center p-4 gap-4  dark:bg-gray-100">
+    <footer className="bg-white shadow flex flex-col items-center justify-center padding gap-4  dark:bg-gray-100">
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-900">
         © 2022
         <a href="#" className="hover:underline">

@@ -3,23 +3,14 @@ import Carousel from "../../components/carousel";
 import { useRouter } from "next/router";
 import homeImage from "../../public/img/home.jpg";
 import Image from "next/image";
+import { loanCarouselImages } from "../../constants";
 export default function Homeloans() {
   const router = useRouter();
-  const carouselImages = [
-    {
-      img: "https://www.japtza.co.tz/img/carousel-1.jpg",
-    },
-    {
-      img: "https://www.outlookindia.com/outlookmoney/public/uploads/article/gallery/74cf59a3b47090a860d701b4cd89ab2f.jpg",
-    },
-    {
-      img: "https://navi.com/blog/wp-content/uploads/2022/02/home-loan-in-dharwad-1.jpg",
-    },
-  ];
+
   return (
     <>
       <div className="pt-4 relative opacity-60">
-        <Carousel caruselImages={carouselImages} />
+        <Carousel caruselImages={loanCarouselImages} />
       </div>
       <div className="absolute flex flex-col justify-center w-full gap-4 py-20 pl-4 md:pl-8 lg:pl-12 pr-4 md:pr-8 lg:pr-12 top-28">
         <h1 className="flex self-center pt-5 text-xl font-bold text-center  sm:text-xl md:text-2xl lg:text-4xl">
@@ -42,7 +33,7 @@ export default function Homeloans() {
         </div>
       </div>
 
-      <div className="p-4 md:p-14 lg:p-20">
+      <div className="padding">
         <div className="flex flex-col gap-4">
           {" "}
           <h1 className="text-xl  text-green-600">

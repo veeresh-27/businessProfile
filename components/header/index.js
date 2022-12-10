@@ -3,20 +3,22 @@ import { Links } from "../Links";
 import { IconBurger } from "../../public/icons";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Logo from '../../public/logos/Logo.svg'
+import Image from "next/image";
 
 export function Header() {
   const router = useRouter();
   const [mobNav, setMobNav] = useState(false);
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between w-full bg-white md:px-5 lg:px-14 xl:px-20 h-14">
-      <div className="p-3 text-xl text-green-600 font-bold cursor-pointer text-primary sm:text-2xl md:text-2xl lg:text-3xl">
-        <h1 onClick={() => router.push("/")}>My&nbsp;Financer</h1>
+    <div className="sticky top-0 z-50 flex items-center justify-between w-full bg-white padding h-20 border-b-2">
+      <div className="py-3 text-xl text-green-600 font-bold cursor-pointer text-primary sm:text-2xl md:text-2xl lg:text-3xl">
+        <h1 onClick={() => router.push("/")}> <Image className="rounded-md " src={Logo} alt={`Logo`} /></h1>
       </div>
       <div className="hidden md:flex md:items-center transition-all ease-in duration-500  gap-2 ">
         <Links />
       </div>
       <div
-        className="md:hidden p-3 cursor-pointer"
+        className="md:hidden pl-3 cursor-pointer"
         onClick={() => setMobNav(!mobNav)}
       >
         <IconBurger />
