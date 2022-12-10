@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 import axios from "axios";
 import support from "../../public/img/support.png";
@@ -69,6 +70,14 @@ export default function Contact() {
   };
   return (
     <section className="relative overflow-hidden bg-white py-10 px-4 md:px-14 lg:px-20">
+      <Head>
+        <title>Contact Ishwar Patil</title>
+        <meta
+          name="description"
+          content="Financial Advisor |Finance Management | House-Insurance Health-Insurance | Loans"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className=" mx-auto  flex flex-wrap lg:justify-between ">
         <div className="container mx-auto  flex flex-wrap lg:justify-between w-full px-4 lg:w-1/2 xl:w-6/12 mb-12 max-w-[570px] lg:mb-0">
           <div className="mb-12 max-w-[570px] lg:mb-0">
