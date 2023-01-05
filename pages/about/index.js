@@ -27,9 +27,11 @@ export default function About() {
         <div className="grid ">
           {" "}
           <p className="font-base text-md text-gray-400">
-            Financial Advisor | AMFI REG MFD
+            Financial Advisor<br/>
+            IRDA Certified | AMFI Reg MFD
+            
           </p>
-          <p>Entrusted by thousands of customers.</p>
+          <p>Trusted by thousands of customers.</p>
           <h3 className=" ">Get in touch</h3>
           <div>
             <p className="flex gap-2 pt-2">
@@ -39,7 +41,7 @@ export default function About() {
               onClick={() => router.push("mailto:licishwarptil@gmail.com")}
               className="flex gap-2 pt-2 cursor-pointer"
             >
-              <IconsMail /> licishwarpatil@gmail.com
+              <IconsMail /> finance.ishwarpatil@gmail.com
             </p>
             <p className="flex gap-2 pt-2 items-center">
               Start your finance planning right now!{" "}
